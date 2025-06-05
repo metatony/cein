@@ -14,27 +14,22 @@ function Navbar() {
         <div className='w-20'>
             <li> <img src={Icons.menu} alt="menu icon" /></li>
         </div>
-        
 
         
+        <div>
             <li> <img className='w-20 h-5' src={Images.logo} alt="menu icon" /></li>
+        </div>
+
+        
     
-        
-        
-
-        <div className='flex justify-between items-center w-25'>
+        <div className='flex justify-between items-center w-14 '>
             <li> 
-                <img className='h-3 w-3' src={Icons.searchIcon}  alt="search icon" />
+                <img className='h-4 w-4' src={Icons.searchIcon}  alt="search icon" />
             </li>
 
             <li className='flex items-center text-[#5c5c5c] text-sm'> 
-                <img className='h-3 w-3 mr-1.5' src={Icons.favoriteIcon}  alt="favorite icon" />
-                0
-            </li>
-
-            <li className='flex items-center text-[#5c5c5c] text-sm'> 
-                <img className='h-3 w-3 mr-1.5' src={Icons.cartIcon}  alt="bag icon" />
-                2
+                <img className='h-4 w-4 ' src={Icons.cartIcon}  alt="bag icon" />
+                
             </li>  
         </div>
         
