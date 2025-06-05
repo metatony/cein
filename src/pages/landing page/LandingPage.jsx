@@ -8,7 +8,7 @@ function LandingPage() {
 
         <div>
 
-        <p className='text-white w-full text-3xl font-light mb-[20px] tracking-wide  '>
+        <p className='text-white w-full text-3xl mb-[20px] tracking-wide   '>
             Elevate Your Style <br /> Timeless Fashion, <br /> Sustainable <br /> Choices
         </p>
 
