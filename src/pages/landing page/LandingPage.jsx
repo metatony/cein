@@ -9,10 +9,10 @@ function LandingPage() {
         <div>
 
         <p className='text-white w-full text-3xl mb-[20px] tracking-wide   '>
-            Elevate Your Style <br /> Timeless Fashion, <br /> Sustainable <br /> Choices
+            Elevate Your Style <br /> Timeless Fashion, <br /> Sustainable <br /> Choices 
         </p>
 
-        <button className='bg-white text-black text-lg w-36  py-[11px] px-[18px]'>Shop Now</button>
+        <button className='bg-white text-black text-lg w-36  py-[11px] px-[18px]'> Shop Now</button>
 
         </div>
 
