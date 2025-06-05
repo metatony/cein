@@ -9,13 +9,13 @@ function Navbar() {
     <AnnounceBar />
     
 
-    <ul className='flex justify-between items-center py-5 px-2'>
+    <ul className='flex justify-between items-center py-5 px-5'>
 
         <div className='w-20'>
             <li> <img src={Icons.menu} alt="menu icon" /></li>
         </div>
 
-        
+     
         <div>
             <li> <img className='w-20 h-5' src={Images.logo} alt="menu icon" /></li>
         </div>

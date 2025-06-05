@@ -1,7 +1,11 @@
+
 @import "tailwindcss";
 
 .root{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     
+}
+
+body {
+    font-family: 'Zain', sans-serif;
 }
