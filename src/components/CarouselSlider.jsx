@@ -18,7 +18,7 @@ function CarouselSlider(props) {
             return (
               <div className="embla__slide" key={item.id}>
                 <img src={item.image} alt={item.name} />
-                  <div className='font-light mt-2 text-sm'>
+                  <div className='font-light mt-2 text-medium'>
                     <p>{item.name}</p>
                     <p>{item.price}</p>
                   </div>
