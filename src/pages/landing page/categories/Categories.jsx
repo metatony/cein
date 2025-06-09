@@ -12,9 +12,9 @@ function Categories() {
 
 
       <div className='flex flex-col space-y-5 px-5 items-center'>
-        <a href="#"><img className='' src={Images.newArrivals} alt="new arrivals" /></a>
-        <a href="#"><img className='' src={Images.casualEdit} alt="the casual edit" /></a>
-        <a href="#"><img className=''  src={Images.bestSellers} alt="best sellers" /></a>
+        <img onClick={''} className='' src={Images.newArrivalsMobile} alt="new arrivals" />
+        <img onClick={''} className='' src={Images.casualEditMobile} alt="the casual edit" />
+        <img onClick={''} className=''  src={Images.bestSellersMobile} alt="best sellers" />
       </div>
 
 
