@@ -20,7 +20,7 @@ function Carousel() {
 
 
   return (
-    <div className='mb-12'>
+    <div className=''>
 
         <div className='text-2xl font-light w-[325px] px-5 pt-8 pb-12 '>
         <p>What to Wear Now</p>

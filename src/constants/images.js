@@ -5,6 +5,8 @@ const Images = {
     newArrivals: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749212411/Collection_banner4_wybbn6.png',
     casualEdit: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749212054/Collection_banner2_t1aukk.png',
     bestSellers: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749212473/6_p9igzm.png',
+    collectionBanner1: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749434025/banner2_rs194e.png',
+    collectionBanner2: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749434032/banner3_tc94e3.png',
 
     Carousel: {
         classicBag: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217618/image_yxj4ih.png',

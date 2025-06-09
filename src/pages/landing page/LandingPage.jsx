@@ -3,6 +3,7 @@ import Images from '../../constants/images'
 import Hero from './hero/Hero'
 import Categories from './categories/Categories'
 import Carousel from './carousel/Carousel'
+import CollectionBanner from './collection banner/CollectionBanner'
 
 function LandingPage() {
   return (
@@ -12,6 +13,8 @@ function LandingPage() {
     <Categories />
 
     <Carousel />
+
+    <CollectionBanner/>
 
 
 
