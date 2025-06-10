@@ -22,8 +22,8 @@ function Carousel() {
   return (
     <div className=''>
 
-        <div className='text-2xl font-light px-5 pt-12 pb-12 '>
-        <p className='py-2'>What to Wear Now</p>
+        <div className='text-xl font-light px-5 pt-12 pb-12 text-center '>
+        <p className='py-2 tracking-wider'>What to Wear Now</p>
         </div>
 
         <CarouselSlider options={OPTIONS} />

@@ -1,14 +1,15 @@
 
 @import "tailwindcss";
 
-.root{
-    background-color: white;
+/* .root{
+ 
     
-}
+} */
 
 body {
     font-family: 'Zain', sans-serif;
-
+    background-color: white;
+  
 }
 
 .embla {

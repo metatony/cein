@@ -9,7 +9,7 @@ function Navbar() {
     <AnnounceBar />
     
 
-    <ul className='flex justify-between items-center py-5 px-5 sticky top-0 bg-white'>
+    <ul className='flex justify-between items-center py-5 px-5 sticky top-0 bg-white z-10'>
 
         <div onClick={''} className='w-20'>
             <li> <img src={Icons.menu} alt="menu icon" /></li>

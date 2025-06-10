@@ -10,6 +10,9 @@ const Images = {
     bestSellersMobile: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749501262/bestSellerMobile_tzlo7l.png',
     collectionBanner1: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749501044/Collection_banner1_btnnjh.png',
     collectionBanner2: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749500976/Collection_banner_mobile_e3wrik.png',
+    instaPhoto1: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749519232/insta1_grymhz.png',
+    instaPhoto2: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749519233/insta2_d6ls4l.png',
+    instaPhoto3: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749519238/insta3_txoiqo.png',
 
     Carousel: {
         classicBag: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217618/image_yxj4ih.png',
