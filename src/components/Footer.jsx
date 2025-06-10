@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='flex flex-col space-y-12 bg-[#f5f4f4] pt-[76px] px-5 text-left font-light'> 
+    <div className='flex flex-col space-y-12 bg-[#f5f4f4] pt-[76px] px-5 text-left '> 
 
       <div className='space-y-1 w-full'>
         <p className='text-[#565656] mb-5'>CONTACT US</p>
