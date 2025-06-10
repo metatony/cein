@@ -18,9 +18,6 @@ function LandingPage() {
     <CollectionBanner/>
 
     <InstaSection/>
-
-
-
     </>
 
   )

@@ -8,9 +8,9 @@ function CollectionBanner() {
        <div className='flex flex-col mt-16'>
 
 
-          <div className='flex flex-col space-y-5 px-5'>
-              <img onClick={''} className='' src={Images.collectionBanner1} alt="new arrivals" />
-              <img onClick={''} className='' src={Images.collectionBanner2} alt="the casual edit" />
+          <div className='flex flex-col lg:grid grid-cols-2 gap-4 lg:mt-10 space-y-5 px-5'>
+              <img onClick={''} className='w-full' src={Images.collectionBanner1} alt="new arrivals" />
+              <img onClick={''} className='w-full' src={Images.collectionBanner2} alt="the casual edit" />
 
           </div>
 

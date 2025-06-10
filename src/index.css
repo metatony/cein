@@ -1,11 +1,6 @@
 
 @import "tailwindcss";
 
-/* .root{
- 
-    
-} */
-
 body {
     font-family: 'Zain', sans-serif;
     background-color: white;
@@ -44,3 +39,8 @@ body {
     height: var(--slide-height);
     user-select: none;
   }
+
+  .hero { background-image: url('src/assets/landing1.png'); background-size: cover; background-position: center; }
+
+  @media (max-width: 1023px) { .hero { background-image: url('src/assets/heroMobile.png'); }
+}

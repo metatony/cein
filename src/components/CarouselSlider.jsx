@@ -11,23 +11,47 @@ function CarouselSlider(props) {
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
 
   return (
-    <section className="embla">
-      <div className="embla__viewport px-5" ref={emblaRef}>
-        <div className="embla__container flex flex-row ">
-          {carouselSlides.map(function(item) {
-            return (
-              <div className="embla__slide" key={item.id} onClick={''}>
-                <img src={item.image} alt={item.name} />
-                  <div className='font-light mt-2 text-medium'>
-                    <p >{item.name}</p>
-                    <p>{item.price}</p>
-                  </div>
-              </div>
-            )
-          })}
+    <>
+      <section className="embla">
+
+        {/* ❗ mobile Carousel ❗ */}
+        <div className="block lg:hidden embla__viewport px-5" ref={emblaRef}>
+          <div className="embla__container flex flex-row ">
+            {carouselSlides.map(function(item) {
+              return (
+                <div className="embla__slide" key={item.id} onClick={''}>
+                  <img src={item.imageMobile } alt={item.name} />
+                    <div className='font-light mt-2 text-medium'>
+                      <p >{item.name}</p>
+                      <p>{item.price}</p>
+                    </div>
+                </div>
+              )
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+
+      </section>
+
+      {/* ❗Desktop Carousel - Non slidable❗ */}
+
+      <div className="hidden lg:block px-5">
+          <div className="grid grid-cols-5 gap-4">
+            {carouselSlides.map(function(item) {
+              return (
+                <div className="" key={item.id} onClick={''}>
+                  <img className='' src={item.imageDesktop} alt={item.name} />
+                    <div className='font-light text-sm mt-2 text-medium'>
+                      <p >{item.name}</p>
+                      <p>{item.price}</p>
+                    </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+    </>
   )
 }
 

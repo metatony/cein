@@ -14,3 +14,6 @@ function App() {
 }
 
 export default App
+
+
+// className='container mx-auto px-4
