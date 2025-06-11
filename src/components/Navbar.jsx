@@ -2,6 +2,8 @@ import React from 'react'
 import Icons from '../constants/icons'
 import Images from '../constants/images'
 import AnnounceBar from './AnnounceBar'
+import NavBarComponent from './HamburgerMenu'
+import HamburgerMenu from './HamburgerMenu'
 
 function Navbar() {
   return (
@@ -16,9 +18,7 @@ function Navbar() {
               <img className="w-20 h-5" src={Images.logo} alt="logo" />
             </li>
             {/* Mobile Menu Icon */}
-            <li className="block w-20 lg:hidden">
-              <img src={Icons.menu} alt="menu icon" />
-            </li>
+            <HamburgerMenu/>
             {/* Desktop Navigation Items */}
             <li className="hidden lg:block">Shop</li>
             <li className="hidden lg:block">Arrivals</li>
