@@ -3,19 +3,19 @@ import Images from '../../../constants/images'
 import CarouselSlider from '../../../components/CarouselSlider'
 
 function Carousel() {
-
-    const OPTIONS = { align: 'start', containScroll: true }
-    const SLIDE_COUNT = 5
+  // Options for the carousel slider
+  const OPTIONS = { align: 'start', containScroll: true }
+  const SLIDE_COUNT = 5
 
   return (
-    <div className=''>
+    <div className="">
+      {/* Section Heading */}
+      <div className="text-xl font-light px-5 pt-12 pb-12 text-center w-full lg:text-left">
+        <p className="py-2 tracking-wider">What to Wear Now</p>
+      </div>
 
-        <div className='text-xl font-light px-5 pt-12 pb-12 text-center w-full lg:text-left '>
-        <p className='py-2 tracking-wider'>What to Wear Now</p>
-        </div>
-
-        <CarouselSlider options={OPTIONS} />
-
+      {/* Carousel Slider */}
+      <CarouselSlider options={OPTIONS} />
     </div>
   )
 }

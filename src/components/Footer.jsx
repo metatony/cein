@@ -2,18 +2,20 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='bg-[#f5f4f4]'>
-      <div className='flex flex-col lg:grid grid-cols-5 gap-1 font-light lg:text-sm space-y-12 pt-[76px] px-5 text-left text-xl '> 
-
-        <div className='space-y-1 w-full'>
-          <p className='text-[#565656] mb-5 font-medium'>CONTACT US</p>
+    <footer className="bg-[#f5f4f4] px-5">
+      {/* Footer Content */}
+      <div className="flex flex-col lg:grid grid-cols-5 gap-4 pt-[76px] space-y-5 text-xl font-light">
+        {/* CONTACT US section */}
+        <div className="space-y-1 w-full">
+          <p className="text-[#565656] mb-5 font-medium">CONTACT US</p>
           <p>+1 (844) 326-6000</p>
           <p>Email Us</p>
           <p>Mon-Fri 9am-3pm PT</p>
         </div>
 
-        <div className='space-y-1 w-full'>
-          <p className='text-[#565656] mb-5 font-medium'>CUSTOMERS</p>
+        {/* CUSTOMERS section */}
+        <div className="space-y-1 w-full">
+          <p className="text-[#565656] mb-5 font-medium">CUSTOMERS</p>
           <p>Start a Return</p>
           <p>Return Policy</p>
           <p>FAQ</p>
@@ -21,9 +23,9 @@ function Footer() {
           <p>About Group Gifting</p>
         </div>
 
-
-        <div className='space-y-1 w-full'>
-          <p className='text-[#565656] mb-5 font-medium'>COMPANY</p>
+        {/* COMPANY section */}
+        <div className="space-y-1 w-full">
+          <p className="text-[#565656] mb-5 font-medium">COMPANY</p>
           <p>About Us</p>
           <p>Sustainability</p>
           <p>Discover Revive</p>
@@ -32,30 +34,27 @@ function Footer() {
           <p>Terms</p>
         </div>
 
-
-        <div className='space-y-4 col-span-2'>
-          <p className='text-xl font-medium tracking-wider'>Get the latest new from us</p>
-          <p className=''>By signing up, you agree to our <span className='underline'>Privacy Policy</span>  and  <span className='underline'>Terms of Service.</span> </p>
-          <button className='bg-black text-white text-lg w-36 text-center py-[8px]'>Subscribe</button>
+        {/* Newsletter Signup section: spans two columns */}
+        <div className="space-y-4 col-span-2">
+          <p className="text-xl font-medium tracking-wider">
+            Get the latest news from us
+          </p>
+          <p>
+            By signing up, you agree to our&nbsp;
+            <span className="underline">Privacy Policy</span> and&nbsp;
+            <span className="underline">Terms of Service</span>.
+          </p>
+          <button className="bg-black text-white text-lg w-36 text-center py-[8px]">
+            Subscribe
+          </button>
         </div>
-
-      
-
       </div>
 
-      <div className=' w-full py-5 text-[#565656] '>
-          {/* <p>&copy;CEIN </p> */}
-          <p className='text-center'>&copy; Metatony </p>
+      {/* Copyright */}
+      <div className="w-full py-5 text-[#565656]">
+        <p className="text-center">&copy; Metatony</p>
       </div>
-
-
-    </div>
-
-
-
-
-
-      
+    </footer>
   )
 }
 

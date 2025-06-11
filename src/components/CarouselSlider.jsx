@@ -14,7 +14,7 @@ function CarouselSlider(props) {
     <>
       <section className="embla">
 
-        {/* ❗ mobile Carousel ❗ */}
+        {/* mobile Carousel */}
         <div className="block lg:hidden embla__viewport px-5" ref={emblaRef}>
           <div className="embla__container flex flex-row ">
             {carouselSlides.map(function(item) {
@@ -33,7 +33,7 @@ function CarouselSlider(props) {
 
       </section>
 
-      {/* ❗Desktop Carousel - Non slidable❗ */}
+      {/* Desktop Carousel - Non slidable */}
 
       <div className="hidden lg:block px-5">
           <div className="grid grid-cols-5 gap-4">
