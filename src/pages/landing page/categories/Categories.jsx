@@ -29,8 +29,6 @@ function Categories() {
         <img onClick={''} className='w-full' src={Images.bestSellersMobile} alt="best sellers" />
       </div>
 
-      {/* ❗ Desktop view  ❗*/}
-
     </div>
   )
 }
