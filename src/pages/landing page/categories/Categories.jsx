@@ -3,23 +3,16 @@ import Images from '../../../constants/images'
 
 function Categories() {
   return (
-    <div className="px-5">
+    <div className="px-5 lg:container mx-auto">
       
       {/* Mobile Paragraph */}
-      <div className="block md:hidden text-xl font-light w-full pt-12 pb-12 text-center">
+      <div className="text-xl font-light w-full pt-12 md:pt-8 md:pb-10 md:text-left pb-12 text-center">
         <p>
-          Elevate your lifestyle with a more intelligent, superior wardrobe.
+          Elevate your lifestyle with a more intelligent, superior wardrobe. <br className='hidden md:block'/>
           Our range is crafted sustainably with longevity in mind.
         </p>
       </div>
       
-      {/* Desktop Paragraph */}
-      <div className="hidden md:block text-xl font-light w-full pt-8 pb-10 text-left">
-        <p>
-          Elevate your lifestyle with a more intelligent, superior wardrobe <br /> 
-          Our range is crafted sustainably with longevity in mind.
-        </p>
-      </div>
       
       {/* Section Images */}
       <div className="flex flex-col md:grid grid-cols-3 md:gap-4 space-y-5 md:space-y-0 justify-between items-center">

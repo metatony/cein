@@ -1,5 +1,4 @@
 import React from 'react'
-import Images from '../../constants/images'
 import Hero from './hero/Hero'
 import Categories from './categories/Categories'
 import Carousel from './carousel/Carousel'
@@ -8,18 +7,22 @@ import InstaSection from './instagram section/InstaSection'
 
 function LandingPage() {
   return (
-    <>
-    <Hero />
+    <div>
+      {/* Hero Section */}
+      <Hero />
 
-    <Categories />
+      {/* Categories Section */}
+      <Categories />
 
-    <Carousel />
+      {/* Carousel Section */}
+      <Carousel />
 
-    <CollectionBanner/>
+      {/* Collection Banner Section */}
+      <CollectionBanner />
 
-    <InstaSection/>
-    </>
-
+      {/* Instagram Section */}
+      <InstaSection />
+    </div>
   )
 }
 

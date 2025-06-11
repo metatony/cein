@@ -8,7 +8,7 @@ function Carousel() {
   const SLIDE_COUNT = 5
 
   return (
-    <div className="">
+    <div className=" lg:container mx-auto">
       {/* Section Heading */}
       <div className="text-xl font-light px-5 pt-12 pb-12 text-center w-full lg:text-left">
         <p className="py-2 tracking-wider">What to Wear Now</p>

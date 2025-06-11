@@ -21,7 +21,7 @@ function HamburgerMenu() {
 
       {/* Mobile Menu (conditionally rendered) */}
       {isOpen ? (
-        <div className="absolute top-full left-0 w-full z-20 bg-white ">
+        <div className="absolute top-full left-0 w-full z-20 bg-white lg:hidden ">
           <ul className="flex flex-col space-y-2 p-4 justify-center items-center">
             <li>
               <a href="#" className="block px-4 py-2 text-gray-700">

@@ -3,7 +3,7 @@ import Images from '../../../constants/images'
 
 function InstaSection() {
   return (
-    <div className='flex flex-col mt-5'>
+    <div className='flex flex-col mt-5 lg:container mx-auto'>
 
 
         <div className='text-xl font-light text-center px-5 pt-[30px] mb-5'>

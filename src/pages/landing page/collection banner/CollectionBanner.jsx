@@ -4,9 +4,9 @@ import Images from '../../../constants/images'
 function CollectionBanner() {
   return (
     <>
-      <div className="flex flex-col mt-16">
+      <section className="flex flex-col mt-16 lg:container mx-auto">
         {/* Image Section */}
-        <div className="flex flex-col md:grid grid-cols-2 gap-4 md:mt-10 space-y-5 px-5">
+        <div className="flex flex-col md:grid grid-cols-2 gap-4 space-y-5 px-5">
           <img 
             onClick={''} 
             className="w-full" 
@@ -20,7 +20,9 @@ function CollectionBanner() {
             alt="the casual edit" 
           />
         </div>
+      </section>
 
+      <section>
         {/* Text Section */}
         <div className="flex text-2xl font-light flex-col justify-center items-center text-center mt-5 lg:mt-0 px-5 bg-[#f5f4f4] pt-[60px]">
           <p className="mb-7 tracking-wider font-medium">
@@ -34,7 +36,7 @@ function CollectionBanner() {
             and mindful lifestyle.
           </p>
         </div>
-      </div>
+      </section>
     </>
   )
 }
