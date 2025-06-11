@@ -11,7 +11,7 @@ function Navbar() {
 
     <ul className='flex justify-between items-center py-5 px-5 sticky top-0 bg-white z-1 '>
 
-        <div className='flex justify-between items-center font-light lg:space-x-8 text-lg'>
+        <div className='flex justify-between items-center font-light lg:space-x-8 lg:text-lg'>
 
             {/* ❗ desktop logo ❗ */}
 
