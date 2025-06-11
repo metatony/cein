@@ -41,7 +41,7 @@ function CarouselSlider(props) {
               return (
                 <div className="" key={item.id} onClick={''}>
                   <img className='' src={item.imageDesktop} alt={item.name} />
-                    <div className='font-light text-sm mt-2 text-medium'>
+                    <div className='font-light text-sm lg:text-lg  mt-2 text-medium'>
                       <p >{item.name}</p>
                       <p>{item.price}</p>
                     </div>
