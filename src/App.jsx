@@ -5,7 +5,7 @@ import LandingPage from './pages/landing page/LandingPage'
 
 function App() {
   return (
-    <div >
+    <div className=''>
       <Navbar/>
       <LandingPage/>
       <Footer/>

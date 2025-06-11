@@ -11,7 +11,7 @@ function InstaSection() {
         </div> 
 
         {/* Mobile View */}
-        <div className="lg:hidden flex space-x-5 px-5 justify-between">
+        <div className="md:hidden flex space-x-5 px-5 justify-between mb-5">
             <img
                 className="h-[101px] w-[101px]"
                 src={Images.instaPhoto1}
@@ -30,7 +30,7 @@ function InstaSection() {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden lg:grid grid-cols-5 gap-5 px-5 mb-5">
+        <div className="hidden md:grid grid-cols-5 gap-5 px-5 mb-5">
             <img
                 className="w-full hover:grayscale"
                 src={Images.instaPhoto1}

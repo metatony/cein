@@ -6,7 +6,7 @@ function Categories() {
     <div className="px-5">
       
       {/* Mobile Paragraph */}
-      <div className="block lg:hidden text-xl font-light w-full pt-12 pb-12 text-center">
+      <div className="block md:hidden text-xl font-light w-full pt-12 pb-12 text-center">
         <p>
           Elevate your lifestyle with a more intelligent, superior wardrobe.
           Our range is crafted sustainably with longevity in mind.
@@ -14,7 +14,7 @@ function Categories() {
       </div>
       
       {/* Desktop Paragraph */}
-      <div className="hidden lg:block text-xl font-light w-full pt-8 pb-10 text-left">
+      <div className="hidden md:block text-xl font-light w-full pt-8 pb-10 text-left">
         <p>
           Elevate your lifestyle with a more intelligent, superior wardrobe <br /> 
           Our range is crafted sustainably with longevity in mind.
@@ -22,7 +22,7 @@ function Categories() {
       </div>
       
       {/* Section Images */}
-      <div className="flex flex-col lg:grid grid-cols-3 lg:gap-4 space-y-5 lg:space-y-0 justify-between items-center">
+      <div className="flex flex-col md:grid grid-cols-3 md:gap-4 space-y-5 md:space-y-0 justify-between items-center">
         <img className="w-full" src={Images.newArrivalsMobile} alt="new arrivals" />
         <img className="w-full" src={Images.casualEditMobile} alt="the casual edit" />
         <img className="w-full" src={Images.bestSellersMobile} alt="best sellers" />

@@ -15,7 +15,7 @@ function CarouselSlider(props) {
       <section className="embla">
 
         {/* mobile Carousel */}
-        <div className="block lg:hidden embla__viewport px-5" ref={emblaRef}>
+        <div className="block md:hidden embla__viewport px-5" ref={emblaRef}>
           <div className="embla__container flex flex-row ">
             {carouselSlides.map(function(item) {
               return (
@@ -35,7 +35,7 @@ function CarouselSlider(props) {
 
       {/* Desktop Carousel - Non slidable */}
 
-      <div className="hidden lg:block px-5">
+      <div className="hidden  md:block px-5">
           <div className="grid grid-cols-5 gap-4">
             {carouselSlides.map(function(item) {
               return (
