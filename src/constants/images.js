@@ -13,6 +13,8 @@ const Images = {
     instaPhoto1: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749519232/insta1_grymhz.png',
     instaPhoto2: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749519233/insta2_d6ls4l.png',
     instaPhoto3: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749519238/insta3_txoiqo.png',
+    instaPhoto4: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749601066/insta6_rsbd0l.png',
+    instaPhoto5: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749601063/insta5_oc3p25.png',
 
     Carousel: {
         classicBag: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217618/image_yxj4ih.png',
