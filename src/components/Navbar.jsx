@@ -2,8 +2,9 @@ import React from 'react'
 import Icons from '../constants/icons'
 import Images from '../constants/images'
 import AnnounceBar from './AnnounceBar'
-import NavBarComponent from './HamburgerMenu'
 import HamburgerMenu from './HamburgerMenu'
+import { FaBagShopping } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -35,12 +36,12 @@ function Navbar() {
 
           {/* Right side nav: Search and Cart */}
           <div className="flex items-center justify-between w-14 lg:w-32 lg:space-x-8 font-light tracking-wider">
-            <li className="flex items-center space-x-5">
-              <img className="h-4 w-4" src={Icons.searchIcon} alt="search icon" />
+            <li className="flex items-center space-x-5 text-[#5c5c5c]">
+              <FaSearch className='lg:h-10' />
               <p className="hidden lg:block">Stores</p>
             </li>
             <li className="flex items-center text-[#5c5c5c]">
-              <img className="h-4 w-4" src={Icons.cartIcon} alt="bag icon" />
+              <FaBagShopping className='lg:h-10  ' />
             </li>
           </div>
         </ul>

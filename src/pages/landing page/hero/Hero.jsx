@@ -12,7 +12,7 @@ function Hero() {
           Elevate Your Style <br /> Timeless Fashion, <br className='md:hidden'/> Sustainable <br /> Choices
         </p>
 
-        <button className="bg-white text-black text-lg w-36  xl:h-24 xl:w-64 xl:text-3xl font-light py-[11px] px-[18px] hover:text-white hover:bg-black">
+        <button className="bg-white text-black text-lg w-36 xl:h-24 xl:w-64 xl:text-3xl font-light py-[11px] px-[18px] hover:text-white hover:bg-black">
           Shop Now
         </button>
       </div>
