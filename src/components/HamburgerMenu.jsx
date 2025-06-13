@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Squash as Hamburger } from 'hamburger-react'
+import hamburgerList from '../constants/hamburgerList'
+import { Link } from "react-router"
 
 function HamburgerMenu() {
   const [isOpen, setOpen] = useState(false)
@@ -23,32 +25,21 @@ function HamburgerMenu() {
       {isOpen ? (
         <div className="absolute top-full left-0 w-full z-20 bg-white lg:hidden ">
           <ul className="flex flex-col space-y-2 p-4 justify-center items-center">
-            <li>
-              <a href="#" className="block px-4 py-2 text-gray-700">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 text-gray-700">
-                Shop
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 text-gray-700">
-                Arrivals
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 text-gray-700">
-                Sales
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 text-gray-700">
-                Journal
-              </a>
-            </li>
-          </ul>
+            {
+              hamburgerList.map(function (item){
+                return (
+                    <li>
+                      {/* Using Link for navigation */}
+                      <Link to={item.link} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      {item.page}
+                
+                      </Link> 
+                 
+                    </li>
+                )
+              })
+            }
+           </ul>
         </div>
       ) : null}
     </nav>
