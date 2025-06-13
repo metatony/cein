@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import { Squash as Hamburger } from 'hamburger-react'
-import hamburgerList from '../constants/hamburgerList'
-import { Link } from "react-router"
+import React, { useState } from "react";
+import { Squash as Hamburger } from "hamburger-react";
+import navigationMenuItems from "../constants/hamburgerList";
+import { Link } from "react-router";
 
 function HamburgerMenu() {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <nav className=''>
+    <nav className="lg:hidden">
       {/* Hamburger Icon (visible on mobile) */}
       <div className="block w-20 lg:hidden">
         <Hamburger
@@ -25,25 +25,24 @@ function HamburgerMenu() {
       {isOpen ? (
         <div className="absolute top-full left-0 w-full z-20 bg-white lg:hidden ">
           <ul className="flex flex-col space-y-2 p-4 justify-center items-center">
-            {
-              hamburgerList.map(function (item){
-                return (
-                    <li>
-                      {/* Using Link for navigation */}
-                      <Link to={item.link} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      {item.page}
-                
-                      </Link> 
-                 
-                    </li>
-                )
-              })
-            }
-           </ul>
+            {navigationMenuItems.map(function (item) {
+              return (
+                <li>
+                  {/* Using Link for navigation */}
+                  <Link
+                    to={item.link}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >
+                    {item.page}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       ) : null}
     </nav>
-  )
+  );
 }
 
-export default HamburgerMenu
+export default HamburgerMenu;

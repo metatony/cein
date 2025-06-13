@@ -40,7 +40,7 @@ body {
     user-select: none;
   }
 
-  .hero { background-image: url('/assets/landing1.png'); background-size: cover; background-position: center; }
+  .hero { background-image: url('/assets/pexels.jpg'); background-size: cover; background-position: center; }
 
-  @media (max-width: 1023px) { .hero { background-image: url('/assets/heroMobile.png'); }
+  @media (max-width: 1023px) { .hero { background-image: url('/assets/pexel6.jpg'); }
 }
