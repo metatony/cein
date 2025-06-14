@@ -22,6 +22,13 @@ const Images = {
   instaPhoto4: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749601066/insta6_rsbd0l.png',
   instaPhoto5: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749601063/insta5_oc3p25.png',
 
+  // Store images
+  storeImage1: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749865952/store1_ragepl.png',
+  storeImage1Mobile: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749866195/store2_xfswn8.png',
+  storeImage2: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749868152/store10_xtd7tf.png',
+  storeImage2Mobile: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749868234/store11_tllvff.png',
+
+
   // Carousel specific images
   Carousel: {
     classicBag: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217618/image_yxj4ih.png',

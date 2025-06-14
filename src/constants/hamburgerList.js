@@ -1,5 +1,5 @@
 const navigationMenuItems = [
-  { page: "Shop", link: "/shop" },
+  { page: "Home", link: "/" },
   { page: "New Arrivals", link: "/arrivals" },
   { page: "Stores", link: "/stores" },
   { page: "Journal", link: "/journal" },
