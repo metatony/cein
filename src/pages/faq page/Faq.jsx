@@ -7,7 +7,7 @@ import FaqAnswers from './FaqAnswers'
 
 function Faq() {
   return (
-    <>
+    <div>
       {/* Navigation */}
       <Navbar />
 
@@ -22,7 +22,7 @@ function Faq() {
 
       {/* Footer */}
       <Footer />
-    </>
+    </div>
   )
 }
 
