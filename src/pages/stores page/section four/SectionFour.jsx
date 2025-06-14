@@ -1,5 +1,5 @@
 import React from 'react'
-import Images from '../../constants/images'
+import Images from '../../../constants/images'
 
 function SectionFour() {
   return (
@@ -10,7 +10,7 @@ function SectionFour() {
           {/* Desktop View */}
           <img
             className="hidden md:block"
-            src={Images.storeImage2}
+            src={Images .storeImage2}
             alt="Store"
           />
           {/* Mobile View */}

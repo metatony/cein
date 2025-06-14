@@ -1,5 +1,5 @@
 import React from 'react'
-import storeImageGrid from '../../constants/storeGridList'
+import storeImageGrid from '../../../constants/storeGridList'
 
 function SectionThree() {
   return (

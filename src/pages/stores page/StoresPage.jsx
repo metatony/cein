@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import SectionTwo from './section two/SectionTwo'
+import SectionThree from './section three/SectionThree'
+import SectionFour from './section four/SectionFour'
 import SectionOne from './section one/SectionOne'
-import SectionTwo from './SectionTwo'
-import SectionThree from './SectionThree'
-import SectionFour from './SectionFour'
+
 
 function StoresPage() {
   return (

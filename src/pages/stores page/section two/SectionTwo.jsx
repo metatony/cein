@@ -1,5 +1,5 @@
 import React from 'react'
-import Images from '../../constants/images'
+import Images from '../../../constants/images'
 
 function SectionTwo() {
   return (
