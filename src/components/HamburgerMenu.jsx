@@ -5,6 +5,7 @@ import { Link } from "react-router";
 
 function HamburgerMenu() {
   const [isOpen, setOpen] = useState(false);
+  
 
   return (
     <nav className="lg:hidden">

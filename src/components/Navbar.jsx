@@ -18,9 +18,9 @@ function Navbar() {
           
           <li className="flex justify-between items-center lg:space-x-8 text-lg font-light">
             {/* Desktop Logo */}
-            <div className="hidden lg:block">
+            <Link to='/' className="hidden lg:block">
               <img className="w-20 h-5" src={Images.logo} alt="logo" />
-            </div>
+            </Link>
             {/* Mobile Menu Icon */}
             <HamburgerMenu />
 
@@ -42,9 +42,9 @@ function Navbar() {
 
           {/* Center area for Mobile Logo */}
           <li className="lg:hidden flex justify-center items-center">
-            <div>
+            <Link to='/'>
               <img className="w-20 h-5" src={Images.logo} alt="logo" />
-            </div>
+            </Link>
           </li>
 
           {/* Right side nav: Search and Cart */}
