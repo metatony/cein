@@ -12,7 +12,7 @@ function Faq() {
       <Navbar />
 
       {/* FAQ Content */}
-      <div className="lg:container mx-auto px-5 mt-24 mb-32 grid grid-cols-1 lg:grid-cols-3 gap-4 font-light">
+      <div className="lg:container mx-auto px-5 mt-20 mb-32 grid grid-cols-1 lg:grid-cols-3 gap-4 font-light">
         {/* Left Container: FAQ Categories */}
         <FaqCategories />
 

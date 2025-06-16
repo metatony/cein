@@ -83,6 +83,20 @@ const productList = [
     desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750037967/coats_kssm4r.png",
     mobileImage: "https://example.com/products/trendy-sunglasses-mobile.png",
   },
+  {
+    id: 13,
+    name: "Ponte Legging Pant",
+    price: "$248",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750115503/pant2_cckmw1.png",
+    mobileImage: "https://example.com/products/vintage-hat-mobile.png",
+  },
+  {
+    id: 14,
+    name: "Silk Wide-Leg Pant",
+    price: "$148",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750115500/pant1_uvd4oz.png",
+    mobileImage: "https://example.com/products/trendy-sunglasses-mobile.png",
+  },
 ];
 
 export default productList;
