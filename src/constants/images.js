@@ -28,6 +28,8 @@ const Images = {
   storeImage2: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749868152/store10_xtd7tf.png',
   storeImage2Mobile: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749868234/store11_tllvff.png',
 
+  //mega menu image
+  megaMenuImage: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1750089659/mega_ybtfxy.png',  
 
   // Carousel specific images
   Carousel: {

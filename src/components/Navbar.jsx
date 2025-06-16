@@ -1,4 +1,3 @@
-import React from "react";
 import Icons from "../constants/icons";
 import Images from "../constants/images";
 import AnnounceBar from "./AnnounceBar";
@@ -7,38 +6,119 @@ import { FaBagShopping } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import navigationMenuItems from "../constants/hamburgerList";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 
 function Navbar() {
+
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsMegaMenuOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsMegaMenuOpen(false);
+  };
+
   return (
     <>
+
       <AnnounceBar />
-      <nav className="sticky top-0 bg-white z-20 border-b border-gray-200 ">
+      <nav className="sticky top-0 bg-white z-20 border-b border-gray-200">
         <ul className="flex justify-between items-center py-5 px-5">
-          {/* Left side nav: Desktop logo and nav items / Mobile menu icon */}
-          
-          <li className="flex justify-between items-center lg:space-x-8 text-lg font-light">
-            {/* Desktop Logo */}
-            <Link to='/' className="hidden lg:block">
+          {/* Left side: Desktop logo and mobile menu icon */}
+          <li className="flex justify-between items-center lg:space-x-8 text-lg font-light group list-none ">
+            {/* Logo displayed on desktop */}
+            <Link to="/" className="hidden lg:block">
               <img className="w-20 h-5" src={Images.logo} alt="logo" />
             </Link>
-            {/* Mobile Menu Icon */}
+
+            {/* Hamburger menu for mobile */}
             <HamburgerMenu />
 
             {/* Desktop Navigation Items */}
-            
-            {navigationMenuItems.map(function (item) {
-              return (
-                <div key={item.page} className="hidden lg:block">
-                  {/* Using Link for navigation */}
-                  <Link to={item.link} className="">
-                    {item.page}
-                  </Link>
-                </div>
-              );
-            })}
+            {navigationMenuItems.map((item) => (
+              <Link
+                onMouseEnter={handleMouseEnter}
+                // onMouseLeave={handleMouseLeave}
+                key={item.page}
+                to={item.link}
+                className="hidden lg:block"
+              >
+                {item.page}
+              </Link>
+            ))}
 
+            {/* Mega Dropdown */}
+            {isMegaMenuOpen && (
+
+            <div className="absolute left-0 top-full w-full bg-white shadow-sm hidden lg:grid grid-cols-7 justify-evenly  px-5 py-10 justify-items-center "
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            >
+              {/* Categories Dropdown */}
+              <div className="">
+                <h4 className="font-semibold mb-2">Categories</h4>
+                <ul>
+                  {navigationMenuItems[0].subItems.map((subItem) => (
+                    <li key={subItem.page}>
+                      <Link to={subItem.link} className="">
+                        {subItem.page}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Featured Dropdown */}
+              <div className="">
+                <h4 className="font-semibold mb-2">Featured</h4>
+                <ul>
+                  {navigationMenuItems[1].subItems.map((subItem) => (
+                    <li key={subItem.page}>
+                      <Link to={subItem.link} className="">
+                        {subItem.page}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Collections */}
+              <div className="">
+                <h4 className="font-semibold mb-2">Collections</h4>
+                <ul>
+                  {navigationMenuItems[2].subItems.map((subItem) => (
+                    <li key={subItem.page}>
+                      <Link to={subItem.link}>{subItem.page}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Journal */}
+              <div className="">
+                <h4 className="font-semibold mb-2">Collections</h4>
+                <ul>
+                  {navigationMenuItems[2].subItems.map((subItem) => (
+                    <li key={subItem.page}>
+                      <Link to={subItem.link}>{subItem.page}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className=" w-full col-span-3">
+                <img className="justify-self-end " src={Images.megaMenuImage} alt="mega menu image" />
+              </div>
+
+
+            </div>
+            )}
 
           </li>
+
 
           {/* Center area for Mobile Logo */}
           <li className="lg:hidden flex justify-center items-center">
@@ -54,9 +134,10 @@ function Navbar() {
               <p className="hidden lg:block">Stores</p>
             </div>
             <div className="flex items-center text-[#5c5c5c]">
-              <FaBagShopping className="lg:h-10  " />
+              <FaBagShopping className="lg:h-10" />
             </div>
           </li>
+
         </ul>
       </nav>
     </>
