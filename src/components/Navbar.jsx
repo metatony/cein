@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <>
       <AnnounceBar />
-      <nav className="sticky top-0 bg-white z-20 ">
+      <nav className="sticky top-0 bg-white z-20 border-b border-gray-200 mb-5 ">
         <ul className="flex justify-between items-center py-5 px-5">
           {/* Left side nav: Desktop logo and nav items / Mobile menu icon */}
           

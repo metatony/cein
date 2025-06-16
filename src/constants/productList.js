@@ -1,0 +1,88 @@
+const productList = [
+  {
+    id: 1,
+    name: "Silk Draped Skirt",
+    price: "$25",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021958/image-10_vnmzlq.png",
+    mobileImage: "https://example.com/products/classic-tshirt-mobile.png",
+  },
+  {
+    id: 2,
+    name: "Charmeuse Shorts",
+    price: "$65",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021958/image-11_zb1p39.png",
+    mobileImage: "https://example.com/products/sporty-jacket-mobile.png",
+  },
+  {
+    id: 3,
+    name: "Cashmere Cardigan",
+    price: "$85",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021954/image-8_uhoids.png",
+    mobileImage: "https://example.com/products/elegant-dress-mobile.png",
+  },
+  {
+    id: 4,
+    name: "Slim Back Slit Turtle-neck Tee",
+    price: "$50",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021955/image-9_bz8l5w.png",
+    mobileImage: "https://example.com/products/casual-sneakers-mobile.png",
+  },
+  {
+    id: 5,
+    name: "Cashmere Funnel Neck Sweater",
+    price: "$120",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021954/image-7_m1hzv9.png",
+    mobileImage: "https://example.com/products/leather-boots-mobile.png",
+  },
+  {
+    id: 6,
+    name: "Single-Origin Cashmere Cropped Sweater",
+    price: "$30",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021948/image-5_uodep3.png",
+    mobileImage: "https://example.com/products/summer-shorts-mobile.png",
+  },
+  {
+    id: 7,
+    name: "Classic Pant",
+    price: "$150",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021948/image-3_z9mgoi.png",
+    mobileImage: "https://example.com/products/winter-coat-mobile.png",
+  },
+  {
+    id: 8,
+    name: "Poplin Oversized Shirt",
+    price: "$40",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021948/image-6_lfz5kd.png",
+    mobileImage: "https://example.com/products/formal-shirt-mobile.png",
+  },
+  {
+    id: 9,
+    name: "Maxi Skirt",
+    price: "$55",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021948/image-4_uzipta.png",
+    mobileImage: "https://example.com/products/highwaist-jeans-mobile.png",
+  },
+  {
+    id: 10,
+    name: "Silk Wide-Leg Pant",
+    price: "$45",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021947/image-2_j71zxo.png",
+    mobileImage: "https://example.com/products/denim-skirt-mobile.png",
+  },
+  {
+    id: 11,
+    name: "Alpaca Wool Cropped Cardigan",
+    price: "$35",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021947/image-1_gp34u6.png",
+    mobileImage: "https://example.com/products/vintage-hat-mobile.png",
+  },
+  {
+    id: 12,
+    name: "Relaxed blazer",
+    price: "$20",
+    desktopImage: "https://res.cloudinary.com/de2vjcr29/image/upload/v1750037967/coats_kssm4r.png",
+    mobileImage: "https://example.com/products/trendy-sunglasses-mobile.png",
+  },
+];
+
+export default productList;

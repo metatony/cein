@@ -10,7 +10,7 @@ function Carousel() {
   return (
     <div className=" lg:container mx-auto">
       {/* Section Heading */}
-      <div className="text-xl font-light px-5 pt-12 pb-12 text-center w-full lg:text-left">
+      <div className="text-xl font-light px-5 pt-12 pb-12 w-full text-left">
         <p className="py-2 tracking-wider">What to Wear Now</p>
       </div>
 

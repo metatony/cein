@@ -13,7 +13,7 @@ function FaqCategories() {
         <div className='text-lg md:text-xl tracking-wide space-y-5 text-[#565656] mt-10 lg:mt-0'>
         <p className='text-2xl text-black lg:text-3xl tracking-wider font-medium'>Categories</p>
 
-            <div className='text-black flex items-center space-x-3'>
+            <div className='text-black flex justify-items-center space-x-3'>
             <TbTruckDelivery className=''  /> 
             <p> Delivery and order tracking</p>
             </div>

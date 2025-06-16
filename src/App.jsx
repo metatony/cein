@@ -1,19 +1,24 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import LandingPage from './pages/landing page/LandingPage'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import LandingPage from './pages/landing page/LandingPage';
 
 function App() {
   return (
-    <div className=''>
-      <Navbar/>
-      <LandingPage/>
-      <Footer/>
+    <div className="">
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Main Landing Page Content */}
+      <LandingPage />
+
+      {/* Footer */}
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
 
 // className='container mx-auto px-4
