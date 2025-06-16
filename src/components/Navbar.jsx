@@ -26,9 +26,9 @@ function Navbar() {
 
       <AnnounceBar />
       <nav className="sticky top-0 bg-white z-20 border-b border-gray-200">
-        <ul className="flex justify-between items-center py-5 px-5">
+        <ul className="relative flex justify-between items-center py-5 px-5">
           {/* Left side: Desktop logo and mobile menu icon */}
-          <li className="flex justify-between items-center lg:space-x-8 text-lg font-light group list-none ">
+          <li className="flex justify-between items-center lg:space-x-8 text-lg font-light ">
             {/* Logo displayed on desktop */}
             <Link to="/" className="hidden lg:block">
               <img className="w-20 h-5" src={Images.logo} alt="logo" />
@@ -49,6 +49,7 @@ function Navbar() {
                 {item.page}
               </Link>
             ))}
+            
 
             {/* Mega Dropdown */}
             {isMegaMenuOpen && (
@@ -58,56 +59,25 @@ function Navbar() {
             onMouseLeave={handleMouseLeave}
             >
               {/* Categories Dropdown */}
-              <div className="">
-                <h4 className="font-semibold mb-2">Categories</h4>
-                <ul>
-                  {navigationMenuItems[0].subItems.map((subItem) => (
-                    <li key={subItem.page}>
-                      <Link to={subItem.link} className="">
-                        {subItem.page}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {
+                navigationMenuItems.map(function(item){
+                  return (
+                    <div className="">
+                      <h4 className=" mb-5 text-[#5c5c5c] font-medium">{item.header}</h4>
+                      <ul className="">
+                        {item.subItems.map((subItem) => (
+                          <li key={subItem.page}>
+                            <Link to={subItem.link} className="">
+                              {subItem.page}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                  </div>
 
-              {/* Featured Dropdown */}
-              <div className="">
-                <h4 className="font-semibold mb-2">Featured</h4>
-                <ul>
-                  {navigationMenuItems[1].subItems.map((subItem) => (
-                    <li key={subItem.page}>
-                      <Link to={subItem.link} className="">
-                        {subItem.page}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Collections */}
-              <div className="">
-                <h4 className="font-semibold mb-2">Collections</h4>
-                <ul>
-                  {navigationMenuItems[2].subItems.map((subItem) => (
-                    <li key={subItem.page}>
-                      <Link to={subItem.link}>{subItem.page}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Journal */}
-              <div className="">
-                <h4 className="font-semibold mb-2">Collections</h4>
-                <ul>
-                  {navigationMenuItems[2].subItems.map((subItem) => (
-                    <li key={subItem.page}>
-                      <Link to={subItem.link}>{subItem.page}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                  )
+                })
+              }
 
               <div className=" w-full col-span-3">
                 <img className="justify-self-end " src={Images.megaMenuImage} alt="mega menu image" />
@@ -145,3 +115,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+// to achieve mega menu you can either use the group and group-hover: class or just render it 
+// conditionally based on the state of the menu
