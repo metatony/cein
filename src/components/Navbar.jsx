@@ -7,6 +7,9 @@ import { FaSearch } from "react-icons/fa";
 import navigationMenuItems from "../constants/hamburgerList";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { CiSearch } from "react-icons/ci";
+import SearchBar from "./SearchBar";
+
 
 
 function Navbar() {
@@ -99,10 +102,10 @@ function Navbar() {
 
           {/* Right side nav: Search and Cart */}
           <li className="flex items-center justify-between w-14 lg:w-32 lg:space-x-8 font-light tracking-wider">
-            <div className="flex items-center space-x-5 text-[#5c5c5c]">
-              <FaSearch className="lg:h-10" />
-              <p className="hidden lg:block">Stores</p>
-            </div>
+
+            <SearchBar/>
+           
+
             <div className="flex items-center text-[#5c5c5c]">
               <FaBagShopping className="lg:h-10" />
             </div>
@@ -119,3 +122,15 @@ export default Navbar;
 
 // to achieve mega menu you can either use the group and group-hover: class or just render it 
 // conditionally based on the state of the menu
+
+{/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-20 lg:container mx-auto px-5">
+        {productList.map((item) => (
+          <div key={item.id} className="cursor-pointer" onClick={''}>
+            <img className="w-full" src={item.desktopImage} alt={item.name} />
+            <div className="font-light text-sm lg:text-lg mt-2 text-medium">
+              <p>{item.name}</p>
+              <p>{item.price}</p>
+            </div>
+          </div>
+        ))}
+      </div> */}

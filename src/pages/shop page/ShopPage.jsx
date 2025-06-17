@@ -1,9 +1,11 @@
-import React from 'react'
-import Navbar from '../../components/Navbar'
-import ProductListing from './ProductListing'
-import Footer from '../../components/Footer'
+import React from "react";
+import Navbar from "../../components/Navbar";
+import ProductListing from "./ProductListing";
+import Footer from "../../components/Footer";
 
 function ShopPage() {
+
+
   return (
     <>
       {/* Navigation */}
@@ -15,7 +17,7 @@ function ShopPage() {
       {/* Footer */}
       <Footer />
     </>
-  )
+  );
 }
 
-export default ShopPage
+export default ShopPage;
