@@ -1,15 +1,11 @@
-import Icons from "../constants/icons";
 import Images from "../constants/images";
 import AnnounceBar from "./AnnounceBar";
 import HamburgerMenu from "./HamburgerMenu";
 import { FaBagShopping } from "react-icons/fa6";
-import { FaSearch } from "react-icons/fa";
 import navigationMenuItems from "../constants/hamburgerList";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { CiSearch } from "react-icons/ci";
 import SearchBar from "./SearchBar";
-
 
 
 function Navbar() {
@@ -44,7 +40,7 @@ function Navbar() {
             {navigationMenuItems.map((item) => (
               <Link
                 onMouseEnter={handleMouseEnter}
-                // onMouseLeave={handleMouseLeave}
+                onMouseLeave={handleMouseLeave}
                 key={item.page}
                 to={item.link}
                 className="hidden lg:block"
@@ -122,15 +118,3 @@ export default Navbar;
 
 // to achieve mega menu you can either use the group and group-hover: class or just render it 
 // conditionally based on the state of the menu
-
-{/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-20 lg:container mx-auto px-5">
-        {productList.map((item) => (
-          <div key={item.id} className="cursor-pointer" onClick={''}>
-            <img className="w-full" src={item.desktopImage} alt={item.name} />
-            <div className="font-light text-sm lg:text-lg mt-2 text-medium">
-              <p>{item.name}</p>
-              <p>{item.price}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}

@@ -45,7 +45,7 @@ function SearchBar() {
 
           {/* Render filtered results only if there is a search query */}
           {searchQuery && (
-            filteredSearchResults.length > 0 ? (
+            filteredSearchResults.length  ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 bg-white justify-items-center max-h-[460px] overflow-y-auto p-5">
                 {filteredSearchResults.map((item) => (
                   <div key={item.id} className="cursor-pointer">
