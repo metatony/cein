@@ -1,6 +1,7 @@
 import React from 'react'
 import productList from '../../constants/productList'
 import { IoIosArrowDown } from "react-icons/io"
+import { Link } from 'react-router-dom'
 
 function ProductListing() {
   return (
@@ -41,7 +42,9 @@ function ProductListing() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-20 lg:container mx-auto px-5">
         {productList.map((item) => (
           <div key={item.id} className="cursor-pointer" onClick={''}>
-            <img className="w-full" src={item.desktopImage} alt={item.name} />
+            <Link to={`/product/${item.id}`}>
+              <img className="w-full" src={item.desktopImage} alt={item.name} />
+            </Link>
             <div className="font-light text-sm lg:text-lg mt-2 text-medium">
               <p>{item.name}</p>
               <p>{item.price}</p>

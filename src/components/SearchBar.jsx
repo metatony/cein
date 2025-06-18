@@ -3,6 +3,7 @@ import productList from '../constants/productList';
 import { CiSearch } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 function SearchBar() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -49,7 +50,9 @@ function SearchBar() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 bg-white justify-items-center max-h-[460px] overflow-y-auto p-5">
                 {filteredSearchResults.map((item) => (
                   <div key={item.id} className="cursor-pointer">
-                    <img className="w-full" src={item.desktopImage} alt={item.name} />
+                    <Link to={`/product/${item.id}`}>
+                      <img onClick={toggleSearch} className="w-full" src={item.desktopImage} alt={item.name} />
+                    </Link>
                     <div className="font-light text-sm lg:text-lg mt-2">
                       <p>{item.name}</p>
                       <p>{item.price}</p>
