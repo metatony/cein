@@ -1,24 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LandingPage from './pages/landing page/LandingPage';
+import StoresPage from './pages/stores page/StoresPage';
+import Faq from './pages/faq page/Faq';
+import ShopPage from './pages/shop page/ShopPage';
+import ProductPage from './pages/product page/ProductPage';
+import { GlobalProvider } from './provider/GlobalProvider';
+import CartSlider from './pages/cart/CartSlider';
 
 function App() {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const toggleCart = () => setIsCartOpen(prev => !prev);
+
   return (
-    <div className="">
-      {/* Navigation */}
-      <Navbar />
+    <GlobalProvider>
+      <BrowserRouter>
+  
+        <Navbar toggleCart={toggleCart} />
+        <CartSlider isOpen={isCartOpen} toggleCart={toggleCart} />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/stores" element={<StoresPage />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+        </Routes>
+        <Footer />
 
-      {/* Main Landing Page Content */}
-      <LandingPage />
-
-      {/* Footer */}
-      <Footer />
-    </div>
+      </BrowserRouter>
+    </GlobalProvider>
   );
 }
 
 export default App;
-
 
 // className='container mx-auto px-4

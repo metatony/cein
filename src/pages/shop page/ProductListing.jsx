@@ -41,7 +41,7 @@ function ProductListing() {
       {/* Product Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-20 lg:container mx-auto px-5">
         {productList.map((item) => (
-          <div key={item.id} className="cursor-pointer" onClick={''}>
+          <div key={item.id} className="cursor-pointer" >
             <Link to={`/product/${item.id}`}>
               <img className="w-full" src={item.desktopImage} alt={item.name} />
             </Link>

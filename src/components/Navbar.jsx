@@ -8,7 +8,7 @@ import { useState } from "react";
 import SearchBar from "./SearchBar";
 
 
-function Navbar() {
+function Navbar(props) {
 
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
@@ -102,7 +102,9 @@ function Navbar() {
             <SearchBar/>
            
 
-            <div className="flex items-center text-[#5c5c5c]">
+            <div 
+            onClick={props.toggleCart}
+            className="flex items-center text-[#5c5c5c]">
               <FaBagShopping className="lg:h-10" />
             </div>
           </li>

@@ -11,17 +11,6 @@ const navigationMenuItems = [
     ],
   },
   {
-    page: "Faq",
-    link: "/faq",
-    header: "Featured",
-    subItems: [
-      { page: "New Arrivals", link: "/featured/new-arrivals" },
-      { page: "Best Sellers", link: "/featured/best-sellers" },
-      { page: "Trending Now", link: "/featured/trending-now" },
-      { page: "Loungewear", link: "/featured/loungewear" },
-    ],
-  },
-  {
     page: "Stores",
     link: "/stores",
     header: "Collections",
@@ -34,7 +23,19 @@ const navigationMenuItems = [
     ],
   },
   {
-    page: "Journal",
+    page: "Faq",
+    link: "/faq",
+    header: "Featured",
+    subItems: [
+      { page: "New Arrivals", link: "/featured/new-arrivals" },
+      { page: "Best Sellers", link: "/featured/best-sellers" },
+      { page: "Trending Now", link: "/featured/trending-now" },
+      { page: "Loungewear", link: "/featured/loungewear" },
+    ],
+  },
+
+  {
+    page: "About Us",
     link: "/journal",
     header: "Journal",
     subItems: [

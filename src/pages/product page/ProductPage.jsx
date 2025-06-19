@@ -4,33 +4,19 @@ import productList from '../../constants/productList';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import ProductAccordion from './ProductAccordion';
+import { useGlobal } from '../../provider/GlobalProvider.jsx';
+import infoList from '../../constants/infoList.js';
 
-const infoList = [
-  {
-    header: "Quality Craftsmanship",
-    subheader: "Excellence in Every Detail",
-    body: "Our products are crafted with premium materials and attention to detail, ensuring you receive only the best quality. Experience lasting style, comfort, and durability with our range.",
-  },
-  {
-    header: "Sustainable Fashion",
-    subheader: "Eco-Friendly Choices",
-    body: "We are dedicated to sustainable practices. Our collections incorporate eco-friendly materials and production methods, providing you with ethical and stylish options.",
-  },
-  {
-    header: "Unique Designs",
-    subheader: "Express Your Individuality",
-    body: "Discover trend-setting designs that blend modern aesthetics with classic elegance. Our range empowers you to stand out and express your unique style.",
-  },
-];
+
 
 function ProductPage() {
   const { id } = useParams();
   const product = productList.find((item => item.id.toString() === id ));
 
+  const { addToCart } = useGlobal();
+
   return (
     <>
-    {/* Navigation */}
-    <Navbar />
 
     {/* Main Product Section */}
     <div className="my-10 lg:container mx-auto px-5">
@@ -52,7 +38,11 @@ function ProductPage() {
 
           {/* button */}
           <div className="md:w-[300px]">
-            <button className="w-full bg-black text-white p-3 text-center">Add to Bag</button>
+            <button 
+            onClick={() => addToCart(product)}
+            className="w-full bg-black text-white p-3 text-center"
+            >Add to Bag
+            </button>
           </div>
 
             <ProductAccordion/>
@@ -64,9 +54,9 @@ function ProductPage() {
         {/* bottom div */}
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 md:mt-20 justify-items-center '>
-          {infoList.map(function(item){
+          {infoList.map(function(item) {
             return (
-              <div className='font-light space-y-5 mb-5 lg:w-[307px] '>
+              <div key={item.id} className='font-light space-y-5 mb-5 lg:w-[307px] '>
                 <p className='text-[#5c5c5c] tracking-wide'>{item.header.toUpperCase()}</p>
                 <p className='font-normal text-xl md:text-xl lg:text-2xl'>{item.subheader}</p>
                 <p className='text-md md:text-l'>{item.body}</p>
@@ -77,8 +67,7 @@ function ProductPage() {
         </div>
 
       </div>
-    {/* Footer */}
-    <Footer/>
+
     </>
 
   )
