@@ -1,3 +1,5 @@
+import Images from "./images";
+
 const productList = [
   {
     id: 1,
@@ -153,6 +155,33 @@ const productList = [
     description:
       "Experience unparalleled elegance and fluidity with these silk wide-leg pants. Carefully tailored for a graceful drape, their luxurious fabric and relaxed silhouette make them an excellent choice for both upscale events and refined everyday wear.",
   },
+  {
+    id: 15,
+    name: "Classic Easy Zipper Tote",
+    price: 298,
+    desktopImage: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586491/desk1_oppnwt.png',
+    category: "Bags Tote",
+    description: 'This classic easy zipper tote is designed for both style and functionality. Crafted from high-quality materials, it features a spacious interior with a secure zipper closure, making it perfect for everyday use or travel. The timeless design ensures it complements any outfit, while the durable construction guarantees long-lasting wear.',
+  },
+  {
+    id: 16,
+    name: "Concertina Phone Bag",
+    price: 140,
+    desktopImage: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586567/desk2_xeli7k.png',
+    category: "Bags Phone",
+    description: 'The Concertina Phone Bag is a stylish and practical accessory designed to keep your phone secure and easily accessible. Made from premium materials, it features a unique concertina design that allows for easy expansion and contraction, providing ample space for your phone and essentials. Its sleek look makes it a perfect companion for both casual outings and formal events.',
+
+  },
+  {
+    id: 18,
+    name: "Single-Origin Cashmere Beanie",
+    price: 35,
+    desktopImage: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586574/desk4_hqfuj0.png',
+    category: "Accessories Beanie",
+    description: 'The Single-Origin Cashmere Beanie is crafted from the finest cashmere, offering unparalleled warmth and softness. Its minimalist design makes it a versatile accessory that pairs well with any outfit. Whether you\'re heading out for a casual day or dressing up for an evening event, this beanie adds a touch of luxury while keeping you cozy in colder temperatures.',
+
+  },
+
 ];
 
 export default productList;

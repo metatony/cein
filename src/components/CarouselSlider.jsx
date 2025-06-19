@@ -1,7 +1,8 @@
 import React from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
-import carouselSlides from '../constants/carouselData'
+import { Link } from 'react-router-dom'
+import productList from '../constants/productList'
 
 
 function CarouselSlider(props) {
@@ -17,13 +18,13 @@ function CarouselSlider(props) {
         {/* mobile Carousel */}
         <div className="block md:hidden embla__viewport px-5" ref={emblaRef}>
           <div className="embla__container flex flex-row ">
-            {carouselSlides.map(function(item) {
+            {productList.slice(5,10).map(function(item) {
               return (
                 <div className="embla__slide " key={item.id} >
-                  <img src={item.imageMobile } alt={item.name} />
+                   <Link to={`/product/${item.id}`}><img className='' src={item.desktopImage} alt={item.name} /></Link>
                     <div className='font-light mt-2 text-medium'>
                       <p >{item.name}</p>
-                      <p>{item.price}</p>
+                      <p>£{item.price}</p>
                     </div>
                 </div>
               )
@@ -37,13 +38,13 @@ function CarouselSlider(props) {
 
       <div className="hidden  md:block px-5">
           <div className="grid grid-cols-5 gap-4">
-            {carouselSlides.map(function(item) {
+            {productList.slice(5,10).map(function(item) {
               return (
                 <div className="" key={item.id} >
-                  <img className='' src={item.imageDesktop} alt={item.name} />
+                  <Link to={`/product/${item.id}`}><img className='' src={item.desktopImage} alt={item.name} /></Link>
                     <div className='font-light text-sm lg:text-lg  mt-2 text-medium'>
                       <p >{item.name}</p>
-                      <p>{item.price}</p>
+                      <p>£{item.price}</p>
                     </div>
                 </div>
               )

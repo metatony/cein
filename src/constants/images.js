@@ -31,19 +31,6 @@ const Images = {
   //mega menu image
   megaMenuImage: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1750089659/mega_ybtfxy.png',  
 
-  // Carousel specific images
-  Carousel: {
-    classicBag: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217618/image_yxj4ih.png',
-    classicBagDesktop: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586491/desk1_oppnwt.png',
-    blackBag: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217618/image2_gck2iv.png',
-    blackBagDesktop: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586567/desk2_xeli7k.png',
-    coat: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217619/image3_j0tnvp.png',
-    coatDesktop: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586568/desk3_hbloja.png',
-    beanie: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217619/image4_rpwmtq.png',
-    beanieDesktop: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586574/desk4_hqfuj0.png',
-    cardigan: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749217745/image5_fytrqc.png',
-    cardiganDesktop: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749586577/desk5_nfu1ws.png',
-  },
 }
 
 export default Images
