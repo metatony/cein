@@ -33,7 +33,7 @@ function ProductPage() {
         {/* Right Grid: Product Details */}
         <div className="flex flex-col space-y-5 font-light md:px-5">
           <p className="text-[#5c5c5c] tracking-wider">Shop / Clothing</p>
-          <p className="text-2xl"> {product.name} <br /> {product.price}</p>
+          <p className="text-2xl"> {product.name} <br /> £{product.price}</p>
           <p className="md:w-[300px]"> {product.description} </p>
 
           {/* button */}

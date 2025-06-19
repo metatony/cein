@@ -43,12 +43,12 @@ function FaqCategories() {
           {
             faqCategoriesList.map(function(item){
               return (
-                <>
-                  <div key={item.id} className='hover:text-black flex items-center space-x-3'>
+                <div key={item.id}>
+                  <div className='hover:text-black flex items-center space-x-3'>
                     {item.icon}
                     <p> {item.text}</p>
                   </div>
-                </>
+                </div>
               )
             })
           }

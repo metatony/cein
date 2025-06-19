@@ -36,7 +36,7 @@ function Footer() {
           </div>
 
           {/* Newsletter Signup section: spans two columns */}
-          <div className="space-y-4 col-span-2">
+          <div className="flex flex-col space-y-4 col-span-2">
             <p className="text-xl font-medium tracking-wider">
               Get the latest news from us
             </p>
@@ -45,6 +45,9 @@ function Footer() {
               <span className="underline">Privacy Policy</span> and&nbsp;
               <span className="underline">Terms of Service</span>.
             </p>
+            <input className='w-full border border-[#dddddd] p-2 focus:outline-none' type="text"
+            placeholder='Enter your email address'
+            />
             <button className="bg-black text-white text-lg w-36 text-center py-[8px]">
               Subscribe
             </button>

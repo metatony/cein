@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import navigationMenuItems from "../constants/hamburgerList";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
+
 
 function HamburgerMenu() {
   const [isOpen, setOpen] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
   
 
   return (
@@ -28,7 +36,7 @@ function HamburgerMenu() {
           <ul className="flex flex-col space-y-2 p-4 justify-center items-center">
             {navigationMenuItems.map(function (item) {
               return (
-                <li>
+                <li key={item.page}>
                   {/* Using Link for navigation */}
                   <Link
                     to={item.link}

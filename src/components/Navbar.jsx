@@ -6,9 +6,11 @@ import navigationMenuItems from "../constants/hamburgerList";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import SearchBar from "./SearchBar";
+import { useGlobal } from "../provider/GlobalProvider";
 
 
 function Navbar(props) {
+  const {cart} = useGlobal();
 
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
@@ -106,6 +108,11 @@ function Navbar(props) {
             onClick={props.toggleCart}
             className="flex items-center text-[#5c5c5c]">
               <FaBagShopping className="lg:h-10" />
+              {cart.length > 0 && (
+                <span className="absolute top-7 border-2 border-white right-1 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+                  {cart.length}
+                </span>
+              )}
             </div>
           </li>
 

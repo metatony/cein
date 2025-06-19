@@ -47,7 +47,7 @@ function ProductListing() {
             </Link>
             <div className="font-light text-sm lg:text-lg mt-2 text-medium">
               <p>{item.name}</p>
-              <p>{item.price}</p>
+              <p>£{item.price}</p>
             </div>
           </div>
         ))}

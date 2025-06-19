@@ -19,7 +19,7 @@ function CarouselSlider(props) {
           <div className="embla__container flex flex-row ">
             {carouselSlides.map(function(item) {
               return (
-                <div className="embla__slide " key={item.id} onClick={''}>
+                <div className="embla__slide " key={item.id} >
                   <img src={item.imageMobile } alt={item.name} />
                     <div className='font-light mt-2 text-medium'>
                       <p >{item.name}</p>
@@ -39,7 +39,7 @@ function CarouselSlider(props) {
           <div className="grid grid-cols-5 gap-4">
             {carouselSlides.map(function(item) {
               return (
-                <div className="" key={item.id} onClick={''}>
+                <div className="" key={item.id} >
                   <img className='' src={item.imageDesktop} alt={item.name} />
                     <div className='font-light text-sm lg:text-lg  mt-2 text-medium'>
                       <p >{item.name}</p>

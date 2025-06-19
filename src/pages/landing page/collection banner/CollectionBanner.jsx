@@ -8,13 +8,11 @@ function CollectionBanner() {
         {/* Image Section */}
         <div className="flex flex-col md:grid grid-cols-2 gap-4 space-y-5 px-5">
           <img 
-            onClick={''} 
             className="w-full" 
             src={Images.collectionBanner1} 
             alt="new arrivals" 
           />
           <img 
-            onClick={''} 
             className="w-full" 
             src={Images.collectionBanner2} 
             alt="the casual edit" 

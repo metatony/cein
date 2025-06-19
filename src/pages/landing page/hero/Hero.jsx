@@ -1,6 +1,8 @@
 import React from 'react'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 function Hero() {
+  const navigate = useNavigate();
   return (
 
     <div className="hero flex flex-col justify-end h-screen bg-cover bg-center px-[32px] pb-[64px]">
@@ -10,7 +12,9 @@ function Hero() {
           Elevate Your Style <br /> Timeless Fashion, <br className='md:hidden'/> Sustainable <br /> Choices
         </p>
 
-        <button className="bg-white text-black text-lg w-36  xl:h-24 xl:w-64 xl:text-3xl font-light py-[11px] px-[18px] hover:text-white hover:bg-black">
+        <button 
+        onClick={() => navigate('/shop')}
+         className="bg-white text-black text-lg w-36  xl:h-24 xl:w-64 xl:text-3xl font-light py-[11px] px-[18px] hover:text-white hover:bg-black">
           Shop Now
         </button>
       </div>
