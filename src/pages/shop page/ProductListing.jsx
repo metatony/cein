@@ -39,11 +39,11 @@ function ProductListing() {
       <hr className="w-full border-t border-gray-200 my-5 lg:hidden" />
 
       {/* Product Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-20 lg:container mx-auto px-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 space-y-5 my-20 lg:container mx-auto px-5">
         {productList.map((item) => (
           <div key={item.id} className="cursor-pointer" >
             <Link to={`/product/${item.id}`}>
-              <img className="w-full" src={item.desktopImage} alt={item.name} />
+              <img className="w-full h-52 lg:h-96 object-cover" src={item.desktopImage} alt={item.name} />
             </Link>
             <div className="font-light text-sm lg:text-lg mt-2 text-medium">
               <p>{item.name}</p>
