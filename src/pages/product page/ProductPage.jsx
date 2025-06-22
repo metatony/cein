@@ -17,7 +17,7 @@ function ProductPage() {
   // function to create random items for the "you might like"
   const randomItems = [...productList].sort(function() {
     return Math.random() - 0.5;
-  }).slice(0, 4);
+  });
 
   return (
     <>
@@ -75,7 +75,7 @@ function ProductPage() {
             <p className='text-center text-xl font-light'>you might also like</p>
 
             <div className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-10 lg:my-20 lg:container mx-auto px-5 ">
-            {randomItems .map((item) => (
+            {randomItems.slice(0, 4) .map((item) => (
               <div key={item.id} className="cursor-pointer" >
                 <Link to={`/product/${item.id}`}>
                   <img className="w-full h-52 lg:h-96   object-cover" src={item.desktopImage} alt={item.name} />

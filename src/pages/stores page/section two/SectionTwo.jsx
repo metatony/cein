@@ -8,7 +8,7 @@ function SectionTwo() {
         {/* Text Section */}
         <div className="space-y-5">
           <p className="text-2xl tracking-wider lg:text-3xl font-medium">Stores</p>
-          <p className="text-xl lg:text-2xl tracking-wide">
+          <p className="text-xl tracking-wide">
             Experience the embodiment of our "Less, but better" philosophy at our physical stores,
             providing an intimate setting to explore our dedication to timeless designs, heritage craftsmanship, and sustainable practices.
             <br /><br />

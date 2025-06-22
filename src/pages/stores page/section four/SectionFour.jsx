@@ -26,7 +26,7 @@ function SectionFour() {
           <p className="text-2xl lg:text-3xl tracking-wider font-medium">
             Book an Appointment
           </p>
-          <p className="text-xl lg:text-2xl tracking-wide">
+          <p className="text-xl tracking-wide">
             Experience personalized shopping services in a welcoming and inviting atmosphere, catering to your individual wardrobe and seasonal gifting requirements, available both in-store and virtually.
           </p>
         </div>
