@@ -2,6 +2,8 @@ import React from 'react';
 import { useGlobal } from '../../provider/GlobalProvider';
 import { IoCloseOutline } from 'react-icons/io5';
 import { SlTrash } from "react-icons/sl";
+import { Navigate, useNavigate } from 'react-router-dom'
+
 
 
 function CartSlider({ isOpen, toggleCart }) {
@@ -9,6 +11,9 @@ function CartSlider({ isOpen, toggleCart }) {
   const totalPrice = cart.reduce(function(total, item) {
     return total + item.price;
   }, 0).toFixed(2);
+
+  const navigate = useNavigate();
+
 
 
   return (
@@ -55,7 +60,8 @@ function CartSlider({ isOpen, toggleCart }) {
 
             <p className='mb-5'>You have {cart.length} items in your cart</p>
           
-            <button 
+            <button
+            onClick={() => navigate('/checkout')}
             className="w-full bg-black text-white p-3 text-center"
             >CHECK OUT £{totalPrice}
             </button>

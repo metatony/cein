@@ -11,6 +11,8 @@ import { GlobalProvider } from './provider/GlobalProvider';
 import CartSlider from './pages/cart/CartSlider';
 import ScrollToTop from './components/ScrollToTop';
 import AboutPage from './pages/about/AboutPage';
+import { CheckoutProvider } from '@stripe/react-stripe-js';
+import Payment from './components/Payment';
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -28,7 +30,8 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/product/:id" element={<ProductPage />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/checkout" element={<Payment />} />        
         </Routes>
         <Footer />
       </BrowserRouter>
