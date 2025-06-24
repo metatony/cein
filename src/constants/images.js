@@ -1,7 +1,7 @@
 // images.js
 const Images = {
   // Global images
-  logo: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749145166/Logo_si8wnp.png',
+  logo: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1750788607/Logo_ozzbhk.svg',
   heroDesktop: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749144538/landing1_m9dkxg.png',
   heroMobile: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749144546/landing_mobile1_itdjze.png',
   newArrivals: 'https://res.cloudinary.com/de2vjcr29/image/upload/v1749602976/collection7_hr0hw4.png',
