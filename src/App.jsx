@@ -13,8 +13,7 @@ import ScrollToTop from './components/ScrollToTop';
 import AboutPage from './pages/about/AboutPage';
 import { CheckoutProvider } from '@stripe/react-stripe-js';
 import Payment from './components/Payment';
-import { Analytics } from '@vercel/analytics/next';
-
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
