@@ -1,9 +1,7 @@
 import React from 'react'
-import Images from '../../../constants/images'
 import CarouselSlider from '../../../components/CarouselSlider'
 
 function Carousel() {
-  // Options for the carousel slider
   const OPTIONS = { align: 'start', containScroll: true }
   const SLIDE_COUNT = 5
 

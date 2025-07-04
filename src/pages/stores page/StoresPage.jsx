@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import SectionTwo from "./section two/SectionTwo";
 import SectionThree from "./section three/SectionThree";
 import SectionFour from "./section four/SectionFour";

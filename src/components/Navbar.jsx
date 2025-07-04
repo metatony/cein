@@ -27,7 +27,7 @@ function Navbar(props) {
 
       <AnnounceBar />
       <nav className="sticky top-0 bg-white z-20 border-b border-gray-200">
-        <ul className="relative flex justify-between items-center py-5 px-5">
+        <ul className="relative flex justify-between items-center py-4 px-5">
           {/* Left side: Desktop logo and mobile menu icon */}
           <li className="flex justify-between items-center lg:space-x-8 text-lg font-light ">
             {/* Logo displayed on desktop */}
@@ -42,7 +42,7 @@ function Navbar(props) {
             {navigationMenuItems.map((item) => (
               <Link
                 onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                // onMouseLeave={handleMouseLeave}
                 key={item.page}
                 to={item.link}
                 className="hidden lg:block"
@@ -53,9 +53,10 @@ function Navbar(props) {
             
 
             {/* Mega Dropdown */}
-            {isMegaMenuOpen && (
+            {/* {isMegaMenuOpen && ( */}
 
-            <div className="absolute left-0 top-full w-full bg-white shadow-sm hidden lg:grid grid-cols-7 justify-evenly  px-5 py-10 justify-items-center "
+            <div className={`absolute left-0 top-full w-full bg-white shadow-sm hidden lg:grid grid-cols-7 justify-evenly  px-5 py-10 justify-items-center transform transition-all duration-300 ease-out
+            ${isMegaMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 pointer-events-none'} `}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             >
@@ -63,12 +64,12 @@ function Navbar(props) {
               {
                 navigationMenuItems.map(function(item){
                   return (
-                    <div className="">
-                      <h4 className=" mb-5 text-[#5c5c5c] font-medium">{item.header}</h4>
-                      <ul className="">
+                    <div key={item.header}>
+                      <h4  className=" mb-5 text-[#5c5c5c] font-semibold">{item.header}</h4>
+                      <ul>
                         {item.subItems.map((subItem) => (
                           <li key={subItem.page}>
-                            <Link to={subItem.link} className="">
+                            <Link to={subItem.link}>
                               {subItem.page}
                             </Link>
                           </li>
@@ -86,7 +87,6 @@ function Navbar(props) {
 
 
             </div>
-            )}
 
           </li>
 
@@ -105,11 +105,11 @@ function Navbar(props) {
            
 
             <div 
-            onClick={props.toggleCart}
-            className="flex items-center text-[#5c5c5c]">
-              <FaBagShopping className="lg:h-10" />
+              onClick={props.toggleCart}
+              className="flex items-center text-[#5c5c5c]">
+              <FaBagShopping className="lg:h-10"/>
               {cart.length > 0 && (
-                <span className="absolute top-7 border-2 p-0 border-white right-1 bg-red-500 text-white rounded-full  text-xs w-5 h-5 flex items-center  justify-center">
+                <span className="absolute top-7 border-2 p-0 border-white right-1 bg-red-500 text-white rounded-full  text-xs w-5 h-5 flex items-center justify-center">
                   {cart.length}
                 </span>
               )}

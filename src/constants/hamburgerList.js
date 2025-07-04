@@ -37,7 +37,7 @@ const navigationMenuItems = [
   {
     page: "About",
     link: "/about",
-    header: "about",
+    header: "About",
     subItems: [
       { page: "Stories", link: "/products/category1" },
       { page: "Blog", link: "/products/category2" },

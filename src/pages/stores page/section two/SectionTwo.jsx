@@ -1,5 +1,5 @@
-import React from 'react'
-import Images from '../../../constants/images'
+import React from "react";
+import Images from "../../../constants/images";
 
 function SectionTwo() {
   return (
@@ -7,13 +7,19 @@ function SectionTwo() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-light">
         {/* Text Section */}
         <div className="space-y-5">
-          <p className="text-2xl tracking-wider lg:text-3xl font-medium">Stores</p>
+          <p className="text-2xl tracking-wider lg:text-3xl font-medium">
+            Stores
+          </p>
           <p className="text-xl tracking-wide">
-            Experience the embodiment of our "Less, but better" philosophy at our physical stores,
-            providing an intimate setting to explore our dedication to timeless designs, heritage craftsmanship, and sustainable practices.
-            <br /><br />
-            Enjoy the convenience of in-store pickup, same-day delivery, and personalized shopping appointments,
-            available both in-store and virtually.
+            Experience the embodiment of our "Less, but better" philosophy at
+            our physical stores, providing an intimate setting to explore our
+            dedication to timeless designs, heritage craftsmanship, and
+            sustainable practices.
+            <br />
+            <br />
+            Enjoy the convenience of in-store pickup, same-day delivery, and
+            personalized shopping appointments, available both in-store and
+            virtually.
           </p>
         </div>
 
@@ -34,7 +40,7 @@ function SectionTwo() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default SectionTwo
+export default SectionTwo;

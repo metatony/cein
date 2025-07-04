@@ -11,7 +11,6 @@ import { GlobalProvider } from './provider/GlobalProvider';
 import CartSlider from './pages/cart/CartSlider';
 import ScrollToTop from './components/ScrollToTop';
 import AboutPage from './pages/about/AboutPage';
-import { CheckoutProvider } from '@stripe/react-stripe-js';
 import Payment from './components/Payment';
 import { Analytics } from "@vercel/analytics/react"
 

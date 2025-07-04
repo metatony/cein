@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function SectionOne() {
   return (
@@ -7,12 +7,13 @@ function SectionOne() {
         Visit Us
       </p>
       <p className="text-xl md:w-1/2 tracking-wide">
-        Embrace the "Less, but better" philosophy in real life at our brick-and-mortar stores, where the service and immediate satisfaction of a retail space harmonize seamlessly with the intimacy and customization of an atelier.
+        Embrace the "Less, but better" philosophy in real life at our
+        brick-and-mortar stores, where the service and immediate satisfaction of
+        a retail space harmonize seamlessly with the intimacy and customization
+        of an atelier.
       </p>
     </section>
-  )
+  );
 }
 
-export default SectionOne
-
-// w-[300px]
+export default SectionOne;

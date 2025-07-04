@@ -1,5 +1,5 @@
-import React from 'react'
-import Images from '../../../constants/images'
+import React from "react";
+import Images from "../../../constants/images";
 
 function SectionFour() {
   return (
@@ -10,7 +10,7 @@ function SectionFour() {
           {/* Desktop View */}
           <img
             className="hidden md:block"
-            src={Images .storeImage2}
+            src={Images.storeImage2}
             alt="Store"
           />
           {/* Mobile View */}
@@ -27,12 +27,15 @@ function SectionFour() {
             Book an Appointment
           </p>
           <p className="text-xl tracking-wide">
-            Experience personalized shopping services in a welcoming and inviting atmosphere, catering to your individual wardrobe and seasonal gifting requirements, available both in-store and virtually.
+            Experience personalized shopping services in a welcoming and
+            inviting atmosphere, catering to your individual wardrobe and
+            seasonal gifting requirements, available both in-store and
+            virtually.
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default SectionFour
+export default SectionFour;
