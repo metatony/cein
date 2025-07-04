@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function CartSlider({ isOpen, toggleCart }) {
   const { cart, removeFromCart } = useGlobal();
+
   const totalPrice = cart
     .reduce(function (total, item) {
       return total + item.price;
