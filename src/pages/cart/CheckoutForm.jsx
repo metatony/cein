@@ -47,7 +47,7 @@ const CheckoutForm = () => {
       // details incomplete)
       setErrorMessage(error.message);
     } else {
-      // Your customer will be redirected to your `return_url`. For some payment
+      // customers will be redirected to your `return_url`. For some payment
       // methods like iDEAL, your customer will be redirected to an intermediate
       // site first to authorize the payment, then redirected to the `return_url`.
     }

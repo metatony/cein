@@ -56,7 +56,7 @@ function Footer() {
 
         {/* Copyright */}
         <div className="w-full py-5 text-[#565656]">
-          <p className="text-center">&copy; Metatony</p>
+          <p className="text-center">Website built by Metatony 🤖</p>
         </div>
       </div>
     </footer>
