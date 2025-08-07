@@ -4,15 +4,22 @@ import HamburgerMenu from "./HamburgerMenu";
 import { FaBagShopping } from "react-icons/fa6";
 import navigationMenuItems from "../constants/hamburgerList";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
 import { useGlobal } from "../provider/GlobalProvider";
+import { useLocation } from "react-router-dom";
+
 
 
 function Navbar(props) {
   const {cart} = useGlobal();
 
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const location = useLocation()
+
+  useEffect(() => {
+    setIsMegaMenuOpen(false);
+  }, [location.pathname]);
 
   const handleMouseEnter = () => {
     setIsMegaMenuOpen(true);
@@ -21,6 +28,8 @@ function Navbar(props) {
   const handleMouseLeave = () => {
     setIsMegaMenuOpen(false);
   };
+
+
 
   return (
     <>
