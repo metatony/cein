@@ -42,7 +42,7 @@ function Navbar(props) {
             {navigationMenuItems.map((item) => (
               <Link
                 onMouseEnter={handleMouseEnter}
-                // onMouseLeave={handleMouseLeave}
+                onMouseLeave={handleMouseLeave}
                 key={item.page}
                 to={item.link}
                 className="hidden lg:block"
