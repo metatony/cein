@@ -3,21 +3,23 @@ import Images from "../../../constants/images";
 
 function SectionFour() {
   return (
-    <div className="lg:container mx-auto px-5 my-20">
+    <section className=" my-20" aria-labelledby="book-appointment-heading">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 font-light">
         {/* Image Section */}
         <div className="mt-5 md:mt-0">
           {/* Desktop View */}
           <img
-            className="hidden md:block"
+            className="hidden md:block rounded-lg"
             src={Images.storeImage2}
             alt="Store"
+            loading="lazy"
           />
           {/* Mobile View */}
           <img
-            className="block md:hidden w-full"
+            className="block md:hidden w-full rounded-lg"
             src={Images.storeImage2Mobile}
             alt="Store"
+            loading="lazy"
           />
         </div>
 
@@ -34,7 +36,7 @@ function SectionFour() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

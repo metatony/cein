@@ -6,15 +6,15 @@ function Carousel() {
   const SLIDE_COUNT = 5
 
   return (
-    <div className=" lg:container mx-auto">
+    <section className="px-4 container mx-auto" aria-label='what to wear now section'>
       {/* Section Heading */}
-      <div className="text-xl font-light px-5 pt-12 pb-12 w-full text-left">
+      <header className="text-xl font-light pt-12 pb-12 w-full text-left">
         <p className="py-2 tracking-wider">What to Wear Now</p>
-      </div>
+      </header>
 
       {/* Carousel Slider */}
       <CarouselSlider options={OPTIONS} />
-    </div>
+    </section>
   )
 }
 

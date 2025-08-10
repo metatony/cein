@@ -3,7 +3,7 @@ import Images from "../../../constants/images";
 
 function SectionTwo() {
   return (
-    <section className="lg:container mx-auto px-5 my-10">
+    <section className=" my-10" aria-labelledby="stores-section-heading">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-light">
         {/* Text Section */}
         <div className="space-y-5">
@@ -27,15 +27,17 @@ function SectionTwo() {
         <div className="mt-5 md:mt-0">
           {/* Desktop view */}
           <img
-            className="hidden md:block"
+            className="hidden md:block rounded-lg"
             src={Images.storeImage1}
             alt="store image"
+            loading="lazy"
           />
           {/* Mobile view */}
           <img
-            className="block md:hidden w-full"
+            className="block md:hidden w-full rounded-lg"
             src={Images.storeImage1Mobile}
             alt="store image"
+            loading="lazy"
           />
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutPage() {
   return (
-    <div className="lg:container mx-auto flex px-5 h-[500px] justify-center items-center font-light">
+    <div className="container mx-auto px-4 flex h-[500px] justify-center items-center font-light">
       <p className="text-center">
         Thanks for checking me out 😉 <br /> GGs -{" "}
         <a className="underline text-[#7e7d7d] hover:text-black"

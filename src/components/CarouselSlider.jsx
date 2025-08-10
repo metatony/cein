@@ -10,16 +10,16 @@ function CarouselSlider(props) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   return (
-    <>
+    <section>
       <section className="embla">
         {/* mobile Carousel */}
-        <div className="block md:hidden embla__viewport px-5" ref={emblaRef}>
+        <div className="block md:hidden embla__viewport px-4" ref={emblaRef}>
           <div className="embla__container flex flex-row ">
             {productList.slice(5, 10).map(function (item) {
               return (
                 <div className="embla__slide " key={item.id}>
                   <Link to={`/product/${item.id}`}>
-                    <img src={item.desktopImage} alt={item.name} />
+                    <img src={item.desktopImage} alt={item.name} className="rounded-lg" />
                   </Link>
 
                   <div className="font-light mt-2 text-medium">
@@ -35,13 +35,13 @@ function CarouselSlider(props) {
 
       {/* Desktop Carousel - Non slidable */}
 
-      <section className="hidden md:block px-5">
+      <section className="hidden md:block">
         <div className="grid grid-cols-5 gap-4">
           {productList.slice(5, 10).map(function (item) {
             return (
               <div key={item.id}>
                 <Link to={`/product/${item.id}`}>
-                  <img src={item.desktopImage} alt={item.name} />
+                  <img src={item.desktopImage} alt={item.name} className="rounded-lg"/>
                 </Link>
 
                 <div className="font-light text-sm lg:text-lg mt-2 text-medium">
@@ -53,7 +53,7 @@ function CarouselSlider(props) {
           })}
         </div>
       </section>
-    </>
+    </section>
   );
 }
 

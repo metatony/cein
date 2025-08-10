@@ -35,7 +35,10 @@ function FaqCategories() {
   ];
 
   return (
-    <div className="col-span-1 space-y-5 w-full order-2 lg:order-1">
+    <section
+      className="col-span-1 space-y-5 w-full order-2 lg:order-1"
+      aria-label="FAQ Categories"
+    >
       <div className="text-lg md:text-xl tracking-wide space-y-5 text-[#565656] mt-10 lg:mt-0">
         <p className="text-2xl text-black lg:text-3xl tracking-wider font-medium">
           Categories
@@ -51,7 +54,7 @@ function FaqCategories() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

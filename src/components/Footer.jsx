@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer className='bg-[#f5f4f4]'>
-      <div className="bg-[#f5f4f4] px-5 container mx-auto">
+      <div className="bg-[#f5f4f4] px-4 container mx-auto">
         {/* Footer Content */}
         <div className="flex flex-col lg:grid grid-cols-5 gap-4 pt-[76px] space-y-5 text-xl font-light">
           {/* CONTACT US section */}
@@ -61,7 +61,7 @@ function Footer() {
           href="https://github.com/metatony"
           rel=" noopener noreferrer "
         >
-          &copy; Website built by Metatony 🤖
+          &copy; Website built by Metatony
         </a>
         </div>
       </div>

@@ -1,13 +1,21 @@
-import React from 'react'
-import Hero from './hero/Hero'
-import Categories from './categories/Categories'
-import Carousel from './carousel/Carousel'
-import CollectionBanner from './collection banner/CollectionBanner'
-import InstaSection from './instagram section/InstaSection'
+import React from "react";
+import SEO from "../../components/SEO";
+import Hero from "./hero/Hero";
+import Categories from "./categories/Categories";
+import Carousel from "./carousel/Carousel";
+import CollectionBanner from "./collection banner/CollectionBanner";
+import InstaSection from "./instagram section/InstaSection";
 
 function LandingPage() {
   return (
-    <div>
+    <main>
+      <SEO
+        title="Cein Stores | Luxury Clothing, Accessories & Lifestyle Essentials"
+        description="Discover Cein Stores' curated collection of luxurious, high-quality clothing, accessories, and lifestyle essentials. Elevate your style with timeless fashion and impeccable craftsmanship."
+        name="ceinstores"
+        type="website"
+      />
+
       {/* Hero Section */}
       <Hero />
 
@@ -22,8 +30,8 @@ function LandingPage() {
 
       {/* Instagram Section */}
       <InstaSection />
-    </div>
-  )
+    </main>
+  );
 }
 
-export default LandingPage
+export default LandingPage;

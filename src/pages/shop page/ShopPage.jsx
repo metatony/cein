@@ -3,9 +3,9 @@ import ProductListing from "./ProductListing";
 
 function ShopPage() {
   return (
-    <div>
+    <main className="px-4 container mx-auto" aria-label="Shop Page">
       <ProductListing />
-    </div>
+    </main>
   );
 }
 

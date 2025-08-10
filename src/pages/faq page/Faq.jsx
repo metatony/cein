@@ -4,16 +4,16 @@ import FaqAnswers from "./FaqAnswers";
 
 function Faq() {
   return (
-    <div>
+    <main>
       {/* FAQ Content */}
-      <div className="lg:container mx-auto px-5 mt-20 mb-32 grid grid-cols-1 lg:grid-cols-3 gap-4 font-light">
+      <section className="px-4 container mx-auto mt-20 mb-32 grid grid-cols-1 lg:grid-cols-3 gap-4 font-light" aria-label="Frequently Asked Questions">
         {/* Left Container: FAQ Categories */}
         <FaqCategories />
 
         {/* Right Container: FAQ Answers */}
         <FaqAnswers />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 

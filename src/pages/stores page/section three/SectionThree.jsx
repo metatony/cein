@@ -3,14 +3,14 @@ import storeImageGrid from "../../../constants/storeGridList";
 
 function SectionThree() {
   return (
-    <div className="lg:container mx-auto px-5 mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <section className="mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-4" aria-labelledby="store-gallery-heading">
       {storeImageGrid.map((item) => (
         <div key={item.id} className="font-light tracking-wide">
-          <img className="w-full" src={item.StoreImageGrid} alt="store image" />
+          <img className="w-full rounded-lg" src={item.StoreImageGrid} alt="store image" loading="lazy"/>
           <p className="mt-2 text-xl">{item.description}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 
