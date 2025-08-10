@@ -25,14 +25,14 @@ function SearchBar() {
   );
 
   return (
-    <div className="flex items-center space-x-5 text-[#5c5c5c]">
+    <div className="flex items-center space-x-5">
       {/* Search Icon toggles the search bar */}
       <FaSearch onClick={toggleSearch} className="lg:h-10 cursor-pointer" />
 
       {isSearchOpen && (
-        <div className="absolute top-18 left-0 right-0 w-full bg-white shadow-lg p-4 z-50">
+        <div className="fixed top-[132px] left-0 right-0 w-full bg-white shadow-lg p-4 z-50">
           {/* Input row: search icon, text input, and close ("X") button */}
-          <div className="flex items-center ">
+          <div className="flex items-center container px-4 mx-auto ">
             <CiSearch className="h-5 w-5 mr-5" />
             <input
               type="text"
@@ -50,15 +50,16 @@ function SearchBar() {
           {/* Render filtered results only if there is a search query */}
           {searchQuery &&
             (filteredSearchResults.length ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 bg-white justify-items-center max-h-[460px] overflow-y-auto p-5">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 bg-white max-h-[460px] overflow-y-auto p-4 mx-auto container scrollbar-hidden">
                 {filteredSearchResults.map((item) => (
                   <div key={item.id} className="cursor-pointer">
                     <Link to={`/product/${item.id}`}>
                       <img
                         onClick={toggleSearch}
-                        className="w-full"
+                        className="w-full rounded-lg h-52 lg:h-96"
                         src={item.desktopImage}
                         alt={item.name}
+                        loading="lazy"
                       />
                     </Link>
                     <div className="font-light text-sm lg:text-lg mt-2">
@@ -73,7 +74,7 @@ function SearchBar() {
             ))}
         </div>
       )}
-      <p className="hidden lg:block">Stores</p>
+      <p className="hidden lg:block text-lg">Stores</p>
     </div>
   );
 }

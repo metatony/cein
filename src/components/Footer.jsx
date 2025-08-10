@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
-    <footer className='bg-[#f5f4f4]'>
+    <footer className="bg-[#f5f4f4]">
       <div className="bg-[#f5f4f4] px-4 container mx-auto">
         {/* Footer Content */}
         <div className="flex flex-col lg:grid grid-cols-5 gap-4 pt-[76px] space-y-5 text-xl font-light">
@@ -45,28 +45,31 @@ function Footer() {
               <span className="underline">Privacy Policy</span> and&nbsp;
               <span className="underline">Terms of Service</span>.
             </p>
-            <input className='w-full border border-[#dddddd] p-2 focus:outline-none' type="text"
-            placeholder='Enter your email address'
+            <input
+              className="w-full border border-[#dddddd] p-2 focus:outline-none rounded-lg"
+              type="text"
+              placeholder="Enter your email address"
             />
-            <button className="bg-black text-white text-lg w-36 text-center py-[8px]">
+            <button className="bg-black text-white text-lg w-36 text-center py-2 rounded-lg">
               Subscribe
             </button>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="w-full py-5 text-[#565656]">
-          <a className="flex justify-center text-[#7e7d7d] hover:text-blue-400 "
-          target="_blank"
-          href="https://github.com/metatony"
-          rel=" noopener noreferrer "
-        >
-          &copy; Website built by Metatony
-        </a>
+        <div className="w-full py-5 text-[#565656] font-light">
+          <a
+            className="flex justify-center text-[#7e7d7d] hover:text-blue-400 "
+            target="_blank"
+            href="https://github.com/metatony"
+            rel=" noopener noreferrer "
+          >
+            &copy; Website built by Metatony
+          </a>
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

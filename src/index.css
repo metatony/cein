@@ -38,6 +38,15 @@ body {
   user-select: none;
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;    
+}
+
+
 .hero {
   background-image: url("/assets/landing1.png");
   background-size: cover;

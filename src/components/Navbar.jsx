@@ -63,13 +63,10 @@ function Navbar(props) {
         </li>
 
         {/* Right side nav: Search and Cart */}
-        <li className="flex items-center justify-between w-14 lg:w-32 lg:space-x-8 font-light tracking-wider">
+        <li className="flex items-center justify-between lg:space-x-8 font-light">
           <SearchBar />
 
-          <div
-            onClick={props.toggleCart}
-            className="flex items-center text-[#5c5c5c]"
-          >
+          <div onClick={props.toggleCart} className="flex items-center">
             <FaBagShopping className="lg:h-10" />
             {cart.length > 0 && (
               <span className="absolute top-7 border-2 p-0 border-white right-1 bg-red-500 text-white rounded-full  text-xs w-5 h-5 flex items-center justify-center">
@@ -84,7 +81,7 @@ function Navbar(props) {
       {/* {isMegaMenuOpen && ( */}
 
       <div
-        className={`absolute left-0 right-0 top-full w-full bg-white shadow-xs  hidden lg:grid grid-cols-7 py-10 transform transition-all duration-300 ease-out px-4 container mx-auto
+        className={`fixed top-[130px] left-0 right-0 w-full bg-white shadow-xs hidden lg:grid grid-cols-7 py-10 transform transition-all duration-300 ease-out justify-items-center
             ${
               isMegaMenuOpen
                 ? "translate-y-0 opacity-100"
