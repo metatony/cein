@@ -7,13 +7,13 @@ import Faq from "./pages/FAQ/Faq";
 import Products from "./pages/Products/Products";
 import ProductDetails from "./pages/Products/components/ProductDetails";
 import { GlobalProvider } from "./provider/GlobalProvider";
-import CartSlider from "./pages/Cart/CartSlider";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About/About";
 import Payment from "./components/Payment";
 import { Analytics } from "@vercel/analytics/react";
 import { HelmetProvider } from "react-helmet-async";
 import Stores from "./pages/Stores/Stores";
+import CartSlider from "./pages/Cart/CartSlider";
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
