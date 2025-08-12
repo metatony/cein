@@ -1,8 +1,8 @@
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import CheckoutForm from "../pages/Cart/CheckoutForm";
 import { useGlobal } from "../provider/GlobalProvider";
+import CheckoutForm from "../pages/Cart/CheckoutForm";
 
 // Replace with your actual publishable key
 const stripePromise = loadStripe(

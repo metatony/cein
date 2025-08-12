@@ -13,6 +13,7 @@ import Payment from "./components/Payment";
 import { Analytics } from "@vercel/analytics/react";
 import { HelmetProvider } from "react-helmet-async";
 import Stores from "./pages/Stores/Stores";
+import CartSlider from "./pages/Cart/CartSlider";
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
