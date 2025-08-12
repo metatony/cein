@@ -2,7 +2,10 @@ import React from "react";
 
 function SectionOne() {
   return (
-    <section className="my-20 h-1/2 w-full flex flex-col font-light space-y-5 md:text-center md:justify-center md:items-center" aria-labelledby="visit-us-heading">
+    <section
+      className="my-20 h-1/2 w-full flex flex-col font-light space-y-5 md:text-center md:justify-center md:items-center"
+      aria-labelledby="visit-us-heading"
+    >
       <p className="text-2xl lg:text-3xl tracking-wider font-medium">
         Visit Us
       </p>

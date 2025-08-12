@@ -2,7 +2,7 @@ import React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { Link } from "react-router-dom";
-import productList from "../constants/productList";
+import productList from "../../../constants/productList";
 
 function CarouselSlider(props) {
   const { options } = props;
@@ -19,7 +19,11 @@ function CarouselSlider(props) {
               return (
                 <div className="embla__slide " key={item.id}>
                   <Link to={`/product/${item.id}`}>
-                    <img src={item.desktopImage} alt={item.name} className="rounded-lg" />
+                    <img
+                      src={item.desktopImage}
+                      alt={item.name}
+                      className="rounded-lg"
+                    />
                   </Link>
 
                   <div className="font-light mt-2 text-medium">
@@ -41,7 +45,11 @@ function CarouselSlider(props) {
             return (
               <div key={item.id}>
                 <Link to={`/product/${item.id}`}>
-                  <img src={item.desktopImage} alt={item.name} className="rounded-lg"/>
+                  <img
+                    src={item.desktopImage}
+                    alt={item.name}
+                    className="rounded-lg"
+                  />
                 </Link>
 
                 <div className="font-light text-sm lg:text-lg mt-2 text-medium">

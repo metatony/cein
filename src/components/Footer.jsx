@@ -64,7 +64,7 @@ function Footer() {
             href="https://github.com/metatony"
             rel=" noopener noreferrer "
           >
-            &copy; Website built by Metatony
+            &copy; Website built by metatony
           </a>
         </div>
       </div>

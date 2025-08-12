@@ -1,18 +1,16 @@
 import React from "react";
 import { Link, Links, useParams } from "react-router-dom";
-import productList from "../../constants/productList";
-import ProductAccordion from "./ProductAccordion";
-import { useGlobal } from "../../provider/GlobalProvider.jsx";
-import infoList from "../../constants/infoList.js";
+import productList from "../../../constants/productList.js";
+import ProductAccordion from "./ProductAccordion.jsx";
+import { useGlobal } from "../../../provider/GlobalProvider.jsx";
+import infoList from "../../../constants/infoList.js";
 
-function ProductPage() {
+function ProductDetails() {
   const { id } = useParams();
   const product = productList.find((item) => item.id.toString() === id);
-
-  // Destructure addToCart from our global context using our custom hook (useGlobal)
   const { addToCart } = useGlobal();
 
-  // function to create random items for the "you might like"
+  // function to create random items for the "you might like section"
   const randomItems = [...productList].sort(function () {
     return Math.random() - 0.5;
   });
@@ -100,4 +98,4 @@ function ProductPage() {
   );
 }
 
-export default ProductPage;
+export default ProductDetails;

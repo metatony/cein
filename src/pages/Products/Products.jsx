@@ -1,7 +1,7 @@
 import React from "react";
-import ProductListing from "./ProductListing";
+import ProductListing from "./components/ProductListing";
 
-function ShopPage() {
+function Products() {
   return (
     <main className="px-4 container mx-auto" aria-label="Shop Page">
       <ProductListing />
@@ -9,4 +9,4 @@ function ShopPage() {
   );
 }
 
-export default ShopPage;
+export default Products;

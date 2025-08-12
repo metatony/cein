@@ -1,9 +1,12 @@
 import React from "react";
-import FaqComponent from "../../components/FaqComponent";
+import FaqComponent from "./FaqComponent";
 
 function FaqAnswers() {
   return (
-    <section className="flex flex-col col-span-2 w-full order-1 lg:order-2" aria-labelledby="faq-main-question">
+    <section
+      className="flex flex-col col-span-2 w-full order-1 lg:order-2"
+      aria-labelledby="faq-main-question"
+    >
       {/* FAQ Question and Description */}
       <div className="space-y-5">
         <p className="text-2xl lg:text-3xl tracking-wider font-medium">

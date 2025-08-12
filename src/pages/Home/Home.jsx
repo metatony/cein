@@ -1,10 +1,10 @@
 import React from "react";
 import SEO from "../../components/SEO";
-import Hero from "./hero/Hero";
-import Categories from "./categories/Categories";
-import Carousel from "./carousel/Carousel";
-import CollectionBanner from "./collection banner/CollectionBanner";
-import InstaSection from "./instagram section/InstaSection";
+import Hero from "./sections/Hero";
+import Categories from "./sections/Categories";
+import Carousel from "./components/Carousel";
+import CollectionBanner from "./sections/CollectionBanner";
+import InstaSection from "./sections/InstaSection";
 
 function LandingPage() {
   return (

@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LandingPage from "./pages/landing page/LandingPage";
-import StoresPage from "./pages/stores page/StoresPage";
-import Faq from "./pages/faq page/Faq";
-import ShopPage from "./pages/shop page/ShopPage";
-import ProductPage from "./pages/product page/ProductPage";
+import Home from "./pages/Home/Home";
+import Faq from "./pages/FAQ/Faq";
+import Products from "./pages/Products/Products";
+import ProductDetails from "./pages/Products/components/ProductDetails";
 import { GlobalProvider } from "./provider/GlobalProvider";
-import CartSlider from "./pages/cart/CartSlider";
+import CartSlider from "./pages/Cart/CartSlider";
 import ScrollToTop from "./components/ScrollToTop";
-import AboutPage from "./pages/about/AboutPage";
+import About from "./pages/About/About";
 import Payment from "./components/Payment";
 import { Analytics } from "@vercel/analytics/react";
 import { HelmetProvider } from "react-helmet-async";
+import Stores from "./pages/Stores/Stores";
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -29,12 +29,12 @@ function App() {
             <Navbar toggleCart={toggleCart} />
             <CartSlider isOpen={isCartOpen} toggleCart={toggleCart} />
             <Routes>
-              <Route path="/" element={<LandingPage />} />
-              <Route path="/stores" element={<StoresPage />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/stores" element={<Stores />} />
+              <Route path="/shop" element={<Products />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/faq" element={<Faq />} />
-              <Route path="/shop" element={<ShopPage />} />
-              <Route path="/product/:id" element={<ProductPage />} />
-              <Route path="/about" element={<AboutPage />} />
+              <Route path="/about" element={<About />} />
               <Route path="/checkout" element={<Payment />} />
             </Routes>
             <Footer />

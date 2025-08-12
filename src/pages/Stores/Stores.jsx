@@ -1,11 +1,11 @@
 import React from "react";
-import SectionTwo from "./section two/SectionTwo";
-import SectionThree from "./section three/SectionThree";
-import SectionFour from "./section four/SectionFour";
-import SectionOne from "./section one/SectionOne";
+import SectionTwo from "./sections/SectionTwo";
+import SectionThree from "./sections/SectionThree";
+import SectionFour from "./sections/SectionFour";
+import SectionOne from "./sections/SectionOne";
 import SEO from "../../components/SEO";
 
-function StoresPage() {
+function Stores() {
   return (
     <main className="px-4 container mx-auto" aria-label="Stores Page">
       <SEO
@@ -17,19 +17,13 @@ function StoresPage() {
 
       <h1 className="text-3xl font-medium mt-8 mb-8 text-center">Our Stores</h1>
 
-      {/* Section 1 */}
       <SectionOne />
-
-      {/* Section 2 */}
       <SectionTwo />
-
-      {/* Section 3 - Grid Section */}
+      {/* Grid Section */}
       <SectionThree />
-
-      {/* Section 4 */}
       <SectionFour />
     </main>
   );
 }
 
-export default StoresPage;
+export default Stores;

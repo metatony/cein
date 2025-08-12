@@ -1,5 +1,5 @@
 import React from "react";
-import productList from "../../constants/productList";
+import productList from "../../../constants/productList";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -40,7 +40,7 @@ function ProductListing() {
       <hr className="w-full border-t border-gray-200 my-5 lg:hidden" />
 
       {/* Product Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 space-y-5 my-20 px-4 container mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 space-y-5 my-20">
         {productList.map((item) => (
           <div key={item.id} className="cursor-pointer">
             <Link to={`/product/${item.id}`}>

@@ -1,12 +1,15 @@
-import React from 'react'
-import CarouselSlider from '../../../components/CarouselSlider'
+import React from "react";
+import CarouselSlider from "./CarouselSlider";
 
 function Carousel() {
-  const OPTIONS = { align: 'start', containScroll: true }
-  const SLIDE_COUNT = 5
+  const OPTIONS = { align: "start", containScroll: true };
+  const SLIDE_COUNT = 5;
 
   return (
-    <section className="px-4 container mx-auto" aria-label='what to wear now section'>
+    <section
+      className="px-4 container mx-auto"
+      aria-label="what to wear now section"
+    >
       {/* Section Heading */}
       <header className="text-xl font-light pt-12 pb-12 w-full text-left">
         <p className="py-2 tracking-wider">What to Wear Now</p>
@@ -15,7 +18,7 @@ function Carousel() {
       {/* Carousel Slider */}
       <CarouselSlider options={OPTIONS} />
     </section>
-  )
+  );
 }
 
-export default Carousel
+export default Carousel;
