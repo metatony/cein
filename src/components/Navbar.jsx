@@ -66,12 +66,12 @@ function Navbar(props) {
         <li className="flex items-center justify-between lg:space-x-8 font-light">
           <SearchBar />
 
-          <div onClick={props.toggleCart} className="flex items-center">
+          <div onClick={props.toggleCart} className="text-center ">
             <FaBagShopping className="lg:h-10" />
             {cart.length > 0 && (
-              <span className="absolute top-7 border-2 p-0 border-white right-1 bg-red-500 text-white rounded-full  text-xs w-5 h-5 flex items-center justify-center">
+              <p className="absolute top-7 border-2 border-white right-1 bg-red-500 text-white rounded-full text-xs w-4 h-4 p-2 flex items-center justify-center text-center">
                 {cart.length}
-              </span>
+              </p>
             )}
           </div>
         </li>
