@@ -9,7 +9,7 @@ function SectionFour() {
         <div className="mt-5 md:mt-0">
           {/* Desktop View */}
           <img
-            className="hidden md:block rounded-lg"
+            className="hidden md:block w-full rounded-lg"
             src={Images.storeImage2}
             alt="Store"
             loading="lazy"

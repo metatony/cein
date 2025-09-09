@@ -4,9 +4,9 @@ import Images from "../../../constants/images";
 function SectionTwo() {
   return (
     <section className=" my-10" aria-labelledby="stores-section-heading">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 font-light">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {/* Text Section */}
-        <div className="space-y-5">
+        <article className="space-y-5">
           <h2 className="section-header-text tracking-wider ">
             Stores
           </h2>
@@ -15,19 +15,20 @@ function SectionTwo() {
             our physical stores, providing an intimate setting to explore our
             dedication to timeless designs, heritage craftsmanship, and
             sustainable practices.
-            <br />
-            <br />
+          </p>
+
+          <p className="paragraph-text tracking-wide mt-5">
             Enjoy the convenience of in-store pickup, same-day delivery, and
             personalized shopping appointments, available both in-store and
             virtually.
           </p>
-        </div>
+        </article>
 
         {/* Image Section */}
         <div className="mt-5 md:mt-0">
           {/* Desktop view */}
           <img
-            className="hidden md:block rounded-lg"
+            className="hidden md:block w-full rounded-lg"
             src={Images.storeImage1}
             alt="store image"
             loading="lazy"
@@ -40,7 +41,7 @@ function SectionTwo() {
             loading="lazy"
           />
         </div>
-      </div>
+      </section>
     </section>
   );
 }
