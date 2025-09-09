@@ -23,10 +23,10 @@ function CollectionBanner() {
       <section>
         {/* Text Section */}
         <div className="flex text-2xl font-light flex-col justify-center items-center text-center mt-5 lg:mt-0 bg-[#f5f4f4] pt-[60px] px-4">
-          <p className="mb-7 tracking-wider font-medium">
+          <p className="mb-7 tracking-wider section-header-text">
             The Art of Fewer, <br className="md:hidden" /> Better Choices
           </p>
-          <p className="text-xl font-light w-full mb-[150px] md:w-[720px] md:text-lg">
+          <p className="w-full mb-[150px] md:w-[720px] paragraph-text">
             Opting for quality over quantity means selecting timeless, durable,
             and responsibly made items. This approach simplifies our lives and
             fosters a deeper appreciation for our surroundings. Emphasizing

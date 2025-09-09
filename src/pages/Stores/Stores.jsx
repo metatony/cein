@@ -15,7 +15,7 @@ function Stores() {
         type="website"
       />
 
-      <h1 className="text-3xl font-medium mt-8 mb-8 text-center">Our Stores</h1>
+      <h1 className="section-header-text mt-8 mb-8 text-center">Our Stores</h1>
 
       <SectionOne />
       <SectionTwo />

@@ -26,7 +26,7 @@ function CarouselSlider(props) {
                     />
                   </Link>
 
-                  <div className="font-light mt-2 text-medium">
+                  <div className="mt-2 paragraph-text">
                     <p>{item.name}</p>
                     <p>£{item.price}</p>
                   </div>
@@ -52,7 +52,7 @@ function CarouselSlider(props) {
                   />
                 </Link>
 
-                <div className="font-light text-sm lg:text-lg mt-2 text-medium">
+                <div className="mt-2 paragraph-text">
                   <p>{item.name}</p>
                   <p>£{item.price}</p>
                 </div>

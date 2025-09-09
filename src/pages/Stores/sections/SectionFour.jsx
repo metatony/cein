@@ -3,8 +3,8 @@ import Images from "../../../constants/images";
 
 function SectionFour() {
   return (
-    <section className=" my-20" aria-labelledby="book-appointment-heading">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 font-light">
+    <section className="my-20" aria-labelledby="book-appointment-heading">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {/* Image Section */}
         <div className="mt-5 md:mt-0">
           {/* Desktop View */}
@@ -24,18 +24,18 @@ function SectionFour() {
         </div>
 
         {/* Text Section */}
-        <div className="space-y-5 mt-5 mb-10">
-          <p className="text-2xl lg:text-3xl tracking-wider font-medium">
+        <article className="space-y-5 mt-5 mb-10">
+          <p className="section-header-text tracking-wider">
             Book an Appointment
           </p>
-          <p className="text-xl tracking-wide">
+          <p className="paragraph-text tracking-wide">
             Experience personalized shopping services in a welcoming and
             inviting atmosphere, catering to your individual wardrobe and
             seasonal gifting requirements, available both in-store and
             virtually.
           </p>
-        </div>
-      </div>
+        </article>
+      </section>
     </section>
   );
 }

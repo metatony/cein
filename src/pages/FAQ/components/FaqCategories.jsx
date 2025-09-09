@@ -39,14 +39,12 @@ function FaqCategories() {
       className="col-span-1 space-y-5 w-full order-2 lg:order-1"
       aria-label="FAQ Categories"
     >
-      <div className="text-lg md:text-xl tracking-wide space-y-5 text-[#565656] mt-10 lg:mt-0">
-        <p className="text-2xl text-black lg:text-3xl tracking-wider font-medium">
-          Categories
-        </p>
+      <div className="tracking-wide space-y-5 text-[#565656] mt-10 lg:mt-0">
+        <h2 className="section-header-text tracking-wider">Categories</h2>
         {faqCategoriesList.map(function (item) {
           return (
             <div key={item.id}>
-              <div className="hover:text-black flex items-center space-x-3">
+              <div className="hover:text-black paragraph-text flex items-center space-x-3">
                 {item.icon}
                 <p> {item.text}</p>
               </div>

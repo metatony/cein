@@ -4,8 +4,8 @@ import Images from "../../../constants/images";
 function InstaSection() {
   return (
     <div className="flex flex-col mt-5 px-4 container mx-auto">
-      <div className="text-xl font-light text-center px-4 pt-7 mb-5">
-        <p className="mb-7 tracking-wider">Shop Instagram</p>
+      <div className="text-center px-4 pt-7 mb-5">
+        <p className="mb-7 tracking-wider section-header-text">Shop Instagram</p>
       </div>
 
       {/* Mobile View */}

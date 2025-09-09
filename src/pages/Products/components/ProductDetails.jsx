@@ -17,63 +17,63 @@ function ProductDetails() {
 
   return (
     <main className="my-10 px-4 container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Left Grid: Product Image */}
         <div className="w-full">
           <img
             className="w-full md:mt-0 rounded-lg"
             src={product.desktopImage}
-            alt="product"
+            alt={product.name}
             loading="lazy"
           />
         </div>
 
         {/* Right Grid: Product Details */}
-        <div className="flex flex-col space-y-5 font-light md:px-4">
+        <article className="flex flex-col space-y-5 font-light md:px-4">
           <p className="text-[#5c5c5c] tracking-wider">Shop / Clothing</p>
-          <p className="text-2xl">
+          <h2 className="section-header-text">
             {" "}
             {product.name} <br /> £{product.price}
-          </p>
-          <p className="md:w-[300px]"> {product.description} </p>
+          </h2>
+          <p className="md:w-[300px] paragraph-text"> {product.description} </p>
 
           {/* button */}
           <div className="md:w-[300px]">
             <button
               onClick={() => addToCart(product)}
-              className="w-full bg-black text-white p-3 text-center rounded-lg"
+              className="w-full bg-black text-white p-3 text-center rounded-lg paragraph-text"
             >
               Add to Bag
             </button>
           </div>
 
           <ProductAccordion />
-        </div>
-      </div>
+        </article>
+      </section>
 
       {/* bottom div */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 md:mt-20 justify-items-center ">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 md:mt-20 justify-items-center ">
         {infoList.map(function (item) {
           return (
-            <div
+            <article
               key={item.id}
               className="font-light space-y-5 mb-5 lg:w-[307px] "
             >
-              <p className="text-[#5c5c5c] tracking-wide">
+              <h3 className="text-[#5c5c5c] tracking-wide">
                 {item.header.toUpperCase()}
-              </p>
-              <p className="font-normal text-xl md:text-xl lg:text-2xl">
+              </h3>
+              <p className="font-normal section-header-text">
                 {item.subheader}
               </p>
-              <p className="text-md md:text-l">{item.body}</p>
-            </div>
+              <p className="paragraph-text">{item.body}</p>
+            </article>
           );
         })}
-      </div>
+      </section>
 
-      <div className="mt-10 md:mt-20">
-        <p className="text-center text-xl font-light">You might also like</p>
+      <section className="mt-10 md:mt-20">
+        <p className="text-center paragraph-text">You might also like</p>
 
         <div className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-10 lg:my-20 px-4 container mx-auto ">
           {randomItems.slice(0, 4).map((item) => (
@@ -86,14 +86,14 @@ function ProductDetails() {
                   loading="lazy"
                 />
               </Link>
-              <div className="font-light text-sm lg:text-lg mt-2 text-medium">
+              <div className="paragraph-text mt-2 ">
                 <p>{item.name}</p>
                 <p>£{item.price}</p>
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </main>
   );
 }

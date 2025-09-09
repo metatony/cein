@@ -4,13 +4,13 @@ import Images from "../../../constants/images";
 function SectionTwo() {
   return (
     <section className=" my-10" aria-labelledby="stores-section-heading">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-light">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 font-light">
         {/* Text Section */}
         <div className="space-y-5">
-          <p className="text-2xl tracking-wider lg:text-3xl font-medium">
+          <h2 className="section-header-text tracking-wider ">
             Stores
-          </p>
-          <p className="text-xl tracking-wide">
+          </h2>
+          <p className="paragraph-text tracking-wide">
             Experience the embodiment of our "Less, but better" philosophy at
             our physical stores, providing an intimate setting to explore our
             dedication to timeless designs, heritage craftsmanship, and

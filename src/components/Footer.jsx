@@ -3,9 +3,9 @@ import React from "react";
 function Footer() {
   return (
     <footer className="bg-[#f5f4f4]">
-      <div className="bg-[#f5f4f4] px-4 container mx-auto">
+      <section className="bg-[#f5f4f4] px-4 container mx-auto">
         {/* Footer Content */}
-        <div className="flex flex-col lg:grid grid-cols-5 gap-4 pt-[76px] space-y-5 text-xl font-light">
+        <section className="flex flex-col lg:grid grid-cols-5 gap-4 pt-[76px] space-y-5 text-xl font-light">
           {/* CONTACT US section */}
           <div className="space-y-1 w-full">
             <p className="text-[#565656] mb-5 font-medium">CONTACT US</p>
@@ -37,7 +37,7 @@ function Footer() {
 
           {/* Newsletter Signup section: spans two columns */}
           <div className="flex flex-col space-y-4 col-span-2">
-            <p className="text-xl font-medium tracking-wider">
+            <p className="section-header-text tracking-wider">
               Get the latest news from us
             </p>
             <p>
@@ -50,14 +50,14 @@ function Footer() {
               type="text"
               placeholder="Enter your email address"
             />
-            <button className="bg-black text-white text-lg w-36 text-center py-2 rounded-lg">
+            <button className="bg-black text-white paragraph-text w-36 text-center py-2 rounded-lg">
               Subscribe
             </button>
           </div>
-        </div>
+        </section>
 
         {/* Copyright */}
-        <div className="w-full py-5 text-[#565656] font-light">
+        <section className="w-full py-5 text-[#565656] font-light">
           <a
             className="flex justify-center text-[#7e7d7d] hover:text-blue-400 "
             target="_blank"
@@ -66,8 +66,8 @@ function Footer() {
           >
             &copy; Website built by metatony
           </a>
-        </div>
-      </div>
+        </section>
+      </section>
     </footer>
   );
 }

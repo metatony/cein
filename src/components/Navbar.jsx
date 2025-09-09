@@ -48,7 +48,7 @@ function Navbar(props) {
               // onMouseLeave={handleMouseLeave}
               key={item.page}
               to={item.link}
-              className="hidden lg:block"
+              className="hidden lg:block text-lg"
             >
               {item.page}
             </Link>

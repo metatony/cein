@@ -6,7 +6,7 @@ function Categories() {
     <section className="px-4 container mx-auto">
       
       {/* Mobile Paragraph */}
-      <div className="text-xl font-light w-full pt-12 md:pt-8 md:pb-10 text-left pb-12 ">
+      <div className="paragraph-text w-full pt-12 md:pt-8 md:pb-10 text-left pb-12 ">
         <p>
           Elevate your lifestyle with a more intelligent, superior wardrobe. <br className='hidden md:block'/>
           Our range is crafted sustainably with longevity in mind.

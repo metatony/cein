@@ -42,19 +42,47 @@ body {
   display: none;
 }
 .scrollbar-hidden {
-  -ms-overflow-style: none; 
-  scrollbar-width: none;    
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-
 .hero {
+  position: relative;
   background-image: url("/assets/landing1.png");
   background-size: cover;
   background-position: center;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* 30% black overlay */
+  pointer-events: none;
+  z-index: 1;
 }
 
 @media (max-width: 1023px) {
   .hero {
     background-image: url("/assets/heroMobile.png");
+  }
+}
+
+@layer components {
+  .paragraph-text {
+    @apply text-lg lg:text-xl font-light;
+  }
+
+  .section-header-text {
+    @apply text-2xl lg:text-3xl font-[400] text-[#292929];
+  }
+
+  .card-header-title {
+    @apply text-3xl lg:text-6xl text-[#292929] font-[400];
+  }
+
+  .border-color-gray {
+    @apply border border-[#E5E5E5] rounded-xl;
   }
 }

@@ -9,13 +9,11 @@ function ProductListing() {
       {/* Container for Sort and Filter Controls */}
       <div className=" mt-10">
         {/* Desktop Controls */}
-        <div className="hidden lg:flex flex-row justify-between tracking-wider text-lg font-light text-[#5c5c5c]">
+        <div className="hidden lg:flex flex-row justify-between tracking-wider">
           <div>
-            <p className="text-2xl lg:text-3xl tracking-wider font-medium">
-              Shop
-            </p>
+            <p className="section-header-text tracking-wider">Shop</p>
           </div>
-          <div className="flex space-x-20">
+          <div className="flex space-x-20 paragraph-text">
             <p className="flex items-center">
               Sort <IoIosArrowDown className="ml-2" />
             </p>
@@ -26,7 +24,7 @@ function ProductListing() {
         </div>
 
         {/* Mobile Controls */}
-        <div className="grid grid-cols-2 lg:hidden justify-items-center tracking-wider font-light">
+        <div className="grid grid-cols-2 lg:hidden justify-items-center tracking-wider paragraph-text">
           <p className="flex items-center">
             Sort <IoIosArrowDown className="ml-2" />
           </p>
@@ -40,9 +38,9 @@ function ProductListing() {
       <hr className="w-full border-t border-gray-200 my-5 lg:hidden" />
 
       {/* Product Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 space-y-5 my-20">
+      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 space-y-5 my-20">
         {productList.map((item) => (
-          <div key={item.id} className="cursor-pointer">
+          <section key={item.id} className="cursor-pointer">
             <Link to={`/product/${item.id}`}>
               <img
                 className="w-full h-52 lg:h-96 object-cover rounded-lg"
@@ -51,13 +49,13 @@ function ProductListing() {
                 loading="lazy"
               />
             </Link>
-            <div className="font-light text-sm lg:text-lg mt-2 text-medium">
+            <div className=" mt-2 paragraph-text">
               <p>{item.name}</p>
               <p>£{item.price}</p>
             </div>
-          </div>
+          </section>
         ))}
-      </div>
+      </section>
     </section>
   );
 }
