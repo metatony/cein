@@ -63,7 +63,7 @@ function Navbar(props) {
         </li>
 
         {/* Right side nav: Search and Cart */}
-        <li className="flex items-center justify-between lg:space-x-8 font-light">
+        <li className="flex items-center justify-between lg:space-x-6 font-light">
           <SearchBar />
 
           <div onClick={props.toggleCart} className="text-center ">
@@ -94,10 +94,10 @@ function Navbar(props) {
         {navigationMenuItems.map(function (item) {
           return (
             <div key={item.header} className="font-light ">
-              <h4 className="mb-5 text-[#5c5c5c] font-semibold">
+              <h4 className="mb-5 font-medium text-lg">
                 {item.header}
               </h4>
-              <ul>
+              <ul className="space-y-3">
                 {item.subItems.map((subItem) => (
                   <li key={subItem.page}>
                     <Link to={subItem.link}>{subItem.page}</Link>
@@ -108,13 +108,6 @@ function Navbar(props) {
           );
         })}
 
-        <div className=" w-full col-span-3">
-          <img
-            className="justify-self-end "
-            src={Images.megaMenuImage}
-            alt="mega menu image"
-          />
-        </div>
       </div>
     </nav>
   );

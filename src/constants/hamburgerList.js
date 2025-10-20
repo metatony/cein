@@ -4,10 +4,10 @@ const navigationMenuItems = [
     link: "/shop",
     header: "Categories",
     subItems: [
-      { page: "Bag", link: "/categories/bag" },
-      { page: "Clothing", link: "/categories/clothing" },
-      { page: "Leather Goods", link: "/categories/leather-goods" },
-      { page: "Gifts", link: "/categories/gifts" },
+      { page: "Bag", link: "/shop" },
+      { page: "Clothing", link: "/shop" },
+      { page: "Leather Goods", link: "/shop" },
+      { page: "Gifts", link: "/shop" },
     ],
   },
   {
@@ -15,11 +15,11 @@ const navigationMenuItems = [
     link: "/stores",
     header: "Collections",
     subItems: [
-      { page: "Office Look", link: "/collections/office-look" },
-      { page: "Selection", link: "/collections/selection" },
-      { page: "Party and Events", link: "/collections/party-events" },
-      { page: "Online Exclusive", link: "/collections/online-exclusive" },
-      { page: "Knitwear", link: "/collections/knitwear" },
+      { page: "Office Look", link: "/stores" },
+      { page: "Selection", link: "/stores" },
+      { page: "Party and Events", link: "/stores" },
+      { page: "Online Exclusive", link: "/stores" },
+      { page: "Knitwear", link: "/stores" },
     ],
   },
   {
@@ -27,10 +27,10 @@ const navigationMenuItems = [
     link: "/faq",
     header: "Featured",
     subItems: [
-      { page: "New Arrivals", link: "/featured/new-arrivals" },
-      { page: "Best Sellers", link: "/featured/best-sellers" },
-      { page: "Trending Now", link: "/featured/trending-now" },
-      { page: "Loungewear", link: "/featured/loungewear" },
+      { page: "New Arrivals", link: "/shop" },
+      { page: "Best Sellers", link: "/shop" },
+      { page: "Trending Now", link: "/shop" },
+      { page: "Loungewear", link: "/shop" },
     ],
   },
 
@@ -39,9 +39,9 @@ const navigationMenuItems = [
     link: "/about",
     header: "About",
     subItems: [
-      { page: "Stories", link: "/products/category1" },
-      { page: "Blog", link: "/products/category2" },
-      { page: "Newsroom", link: "/products/category3" },
+      { page: "Stories", link: "/about" },
+      { page: "Blog", link: "/about" },
+      { page: "Newsroom", link: "/about" },
     ],
   },
 ];
