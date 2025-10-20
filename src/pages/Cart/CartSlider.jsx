@@ -22,7 +22,7 @@ function CartSlider({ isOpen, toggleCart }) {
       }`}
     >
       {/* Header */}
-      <div className="p-4 border-b border-[#dfdfdf] flex justify-between items-center">
+      <div className="p-4  flex justify-between items-center">
         <h2 className="text-xl font-light tracking-wider">Shopping Bag</h2>
         <IoCloseOutline
           onClick={toggleCart}
