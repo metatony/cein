@@ -30,7 +30,7 @@ function SearchBar() {
       <FaSearch onClick={toggleSearch} className="lg:h-10 cursor-pointer" />
 
       {isSearchOpen && (
-        <section className="fixed top-[132px] left-0 right-0 w-full bg-white shadow-lg p-4 z-50">
+        <section className="fixed top-[110px] left-0 right-0 w-full bg-white shadow-lg p-4 z-50">
           {/* Input row: search icon, text input, and close ("X") button */}
           <div className="flex items-center container px-4 mx-auto ">
             <CiSearch className="h-5 w-5 mr-5" />

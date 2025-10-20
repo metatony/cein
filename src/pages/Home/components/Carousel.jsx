@@ -11,8 +11,8 @@ function Carousel() {
       aria-label="what to wear now section"
     >
       {/* Section Heading */}
-      <header className="text-xl font-light pt-12 pb-12 w-full text-left">
-        <p className="py-2 tracking-wider paragraph-text">What to Wear Now</p>
+      <header className="text-xl font-light py-12 md:py-16 w-full text-left">
+        <p className="py-2 tracking-wider section-header-text text-center">What to Wear Now</p>
       </header>
 
       {/* Carousel Slider */}

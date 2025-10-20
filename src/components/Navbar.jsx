@@ -81,7 +81,7 @@ function Navbar(props) {
       {/* {isMegaMenuOpen && ( */}
 
       <div
-        className={`fixed top-[130px] left-0 right-0 w-full bg-white shadow-xs hidden lg:grid grid-cols-7 py-10 transform transition-all duration-300 ease-out justify-items-center
+        className={`fixed top-[110px] left-0 right-0 w-full bg-white shadow-xs hidden lg:grid grid-cols-7 py-10 transform transition-all duration-300 ease-out justify-items-center
             ${
               isMegaMenuOpen
                 ? "translate-y-0 opacity-100"
